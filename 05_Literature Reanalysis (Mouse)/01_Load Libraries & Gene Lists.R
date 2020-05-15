@@ -17,12 +17,12 @@ library(future)
 plan("multiprocess", workers = 4)
 options(future.globals.maxSize = 5000 * 1024^2)
 
-
-
 # 2.0 Load Gene Lists for Module Scoring ----------------------------------
-# Gene lists available in SI Tables XX-XX
+    # Gene lists available in SI Tables XX-XX
 shared_sig <- "Load Microglia Meta Cell Score"
 
 shared_sig_ensembl <- "Convert gene names to ensembl"
 
 homeostatic_mg <- "Homeostatic microglia gene list"
+
+homeostatic_mg_ensembl <- "Convert gene names to ensembl"
