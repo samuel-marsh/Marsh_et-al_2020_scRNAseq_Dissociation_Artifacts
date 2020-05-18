@@ -106,7 +106,7 @@ oligo <- ScoreJackStraw(oligo, dims = 1:20)
 beep(sound = 2)
 # Clustering
 oligo <- FindNeighbors(oligo, dims = 1:13)
-oligo <- FindClusters(oligo, resolution = 0.2)
+oligo <- FindClusters(oligo, resolution = 0.6)
 oligo <- RunTSNE(oligo, dims = 1:13)
 
 DimPlot(oligo, label = TRUE, reduction = "tsne")
