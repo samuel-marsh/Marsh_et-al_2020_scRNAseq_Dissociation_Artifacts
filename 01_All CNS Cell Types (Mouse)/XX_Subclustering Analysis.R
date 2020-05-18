@@ -1,3 +1,12 @@
+# Subclustering Analysis was performed using following packages:
+    # R 3.6.1
+    # Seurat 3.1.5 
+
+# Analysis was performed using saved .RDS Seurat Object as starting point.
+    # Original object was created as described in preceding code using Seurat 2.3.4
+    # Object was read into R and updated to Seurat V3 using `UpdateSeuratObject()` before conducting subclustering analysis below.`
+
+
 # Subset Decisions --------------------------------------------------------
 # Subset cell types with >= 80 cells per replicate 
 # Dimplot of original object
