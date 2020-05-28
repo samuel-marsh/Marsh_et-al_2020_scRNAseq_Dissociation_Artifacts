@@ -1,8 +1,11 @@
-# Start packrat
+# Start new RStudio Project File
+    # Isolate libraries for package versioning
+
+# Load packrat & start
 library(packrat)
 init()
 
-# Install versions
+# Install versions package
 install.packages("versions")
 
 # Load versions and install properly dataed packages
