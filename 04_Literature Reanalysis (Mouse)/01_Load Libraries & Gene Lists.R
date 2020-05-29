@@ -21,8 +21,17 @@ options(future.globals.maxSize = 5000 * 1024^2)
     # Gene lists available in SI Tables XX-XX
 shared_sig <- "Load Microglia Meta Cell Score"
 
-shared_sig_ensembl <- "Convert gene names to ensembl"
-
 homeostatic_mg <- "Homeostatic microglia gene list"
 
-homeostatic_mg_ensembl <- "Convert gene names to ensembl"
+# 2.1 Create gene lists compatible with Mizrak et al dataset
+    # Mizrak et al dataset are in form of ensembl ID #s and not external gene names 
+    # gene IDs also have suffix included
+
+# Create compatible gene list for Mizrak module scoring
+gene_of_interest <- gene_labels_mizrak %>% 
+    filter(str_detect(gene_name, 'gene_of_interest')) %>% 
+    pull(ensembl_ID)
+        # see script 05_Mizrak et al Reanalysis for creation og 'gene_labels_mizrak' object
+
+shared_sig_ensembl <- "Converted gene names to ensembl"
+homeostatic_mg_ensembl <- "Converted gene names to ensembl"
