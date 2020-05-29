@@ -10,15 +10,17 @@
 # Subset Decisions --------------------------------------------------------
 # Subset cell types with >= 80 cells per replicate 
 # Dimplot of original object
+all_cns_cells <- UpdateSeuratObject(all_cns_cells)
+
 DimPlot(all_cns_cells, reduction = "tsne", label = TRUE)
 
 all_stats <- Cluster_Stats_All_Samples(all_cns_cells)
 
 # Create Subset Objects
-myeloid <- subset(x = all_cns_cells, idents = c("Microglia", "Microglia (Act)", "Mono/Mac"))
+myeloid <- subset(x = all_cns_cells, idents = c("Microglia", "Microglia (exAM)", "Mono/Mac"))
 DimPlot(myeloid)
 
-endo <- subset(x = all_cns_cells, idents = c("Endothelial 1", "Endothelial 2"))
+endo <- subset(x = all_cns_cells, idents = c("Endothelial", "Pericytes"))
 DimPlot(endo)
 
 astro <- subset(x = all_cns_cells, idents = c("Astrocyte 1", "Astrocyte 2", "Bergmann Glia"))
