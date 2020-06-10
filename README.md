@@ -13,10 +13,11 @@ All the raw data (fastqs) and expression matrices are available at the Gene Expr
 - Single Cell Sequencing of Microglia with 4 different dissociation protocols; 12 samples (n=3 per group) ([GSEXXXXXXX](GSEXXXXXXX))
 
 ### Processed Data
-All processed data files from Cell Ranger output are available via NCBI GEO.  There are 3 files per library:
-  1. Sample_Name_barcodes.tsv.gz: corresponds to the cell barcodes (column names).
-  2. Sample_Name_features.tsv.gz: corresponds to the gene identifiers.
-  3. Sample_Name_matrix*mtx.gz: expression matrix in sparse format.
+All processed data files from Cell Ranger Count outputs are available via NCBI GEO.  Information on Cell Ranger and Genome Version can be found in each GEO record.
+There are 3 files per library:
+  1. Sample_Name_barcodes.tsv.gz: corresponds to the cell barcodes (i.e. column names).
+  2. Sample_Name_features.tsv.gz: corresponds to the gene identifiers(i.e. row names).
+  3. Sample_Name_matrix.mtx.gz: expression matrix in sparse format.
 
 ### fastq Files
 All raw data fastq files can be downloaded from SRA linked from NCBI GEO records.
