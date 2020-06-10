@@ -15,7 +15,7 @@ All the raw data (fastqs) and expression matrices are available at the Gene Expr
     2. scRNAseq of all CNS cells with or without inhibitors | 10X 3' V2 | 4 samples (n=2 per group) | ([GSE152182](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE152182))
     3. scRNAseq of microglia (tail vein PBS injection) | 10X 3' V2 | 4 samples | ([GSEXXXXXX](GSEXXXXXX))
 - **snRNAseq of human brain tissue**  
-    4. snRNAseq of post-mortem brain tissue | 10X 3' V3 | 3 samples | ([GSEXXXXXX](GSEXXXXXX))
+    4. snRNAseq of post-mortem brain tissue | 10X 3' V3 | 3 samples | ([GSEXXXXXX](GSEXXXXXX))  
     5. snRNAseq of surgically resected brain tissue with or without freezing time delay | 10X 3' V3 | 4 samples (n= 2; x2 timepoints per sample) | ([GSEXXXXXX](GSEXXXXXX))
 
 ### Processed Data
