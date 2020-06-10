@@ -16,7 +16,7 @@ All the raw data (fastqs) and expression matrices are available at the Gene Expr
   3. scRNAseq of microglia (tail vein PBS injection) | 10X 3' V2 | 4 samples | ([GSEXXXXXX](GSEXXXXXX))
 
 **snRNAseq of human brain tissue**  
-  4. snRNAseq of post-mortem brain tissue | 10X 3' V3 | 3 samples | ([GSEXXXXXX](GSEXXXXXX))  
+`&nbsp;3.``&nbsp;3.``&nbsp;3.`snRNAseq of post-mortem brain tissue | 10X 3' V3 | 3 samples | ([GSEXXXXXX](GSEXXXXXX))  
   5. snRNAseq of surgically resected brain tissue with or without freezing time delay | 10X 3' V3 | 4 samples (n= 2; x2 timepoints per sample) | ([GSEXXXXXX](GSEXXXXXX))
 
 ### Processed Data
