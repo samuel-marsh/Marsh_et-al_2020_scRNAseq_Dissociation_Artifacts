@@ -10,14 +10,14 @@ Included is the code necessary to replicate the Seurat object used for analysis 
 
 ## Data
 All the raw data (fastqs) and expression matrices are available at the Gene Expression Omnibus (GEO) under [GSE152184](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE152184) (Coming soon). The data in this project can be broadly divided into 2 categories (5 subprojects):  
-**scRNAseq of mouse brain or sorted myeloid cells**
-  1. scRNAseq of microglia with 4 different dissociation protocols | 10X 3' V2 | 12 samples (n=3 per group) | ([GSE152183](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE152183))
-  2. scRNAseq of all CNS cells with or without inhibitors | 10X 3' V2 | 4 samples (n=2 per group) | ([GSE152182](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE152182))
-  3. scRNAseq of microglia (tail vein PBS injection) | 10X 3' V2 | 4 samples | ([GSEXXXXXX](GSEXXXXXX))
+**scRNAseq of mouse brain or sorted myeloid cells**  
+    1. scRNAseq of microglia with 4 different dissociation protocols | 10X 3' V2 | 12 samples (n=3 per group) | ([GSE152183](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE152183))
+    2. scRNAseq of all CNS cells with or without inhibitors | 10X 3' V2 | 4 samples (n=2 per group) | ([GSE152182](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE152182))
+    3. scRNAseq of microglia (tail vein PBS injection) | 10X 3' V2 | 4 samples | ([GSEXXXXXX](GSEXXXXXX))
 
 **snRNAseq of human brain tissue**  
-`&nbsp;3.``&nbsp;3.``&nbsp;3.`snRNAseq of post-mortem brain tissue | 10X 3' V3 | 3 samples | ([GSEXXXXXX](GSEXXXXXX))  
-  5. snRNAseq of surgically resected brain tissue with or without freezing time delay | 10X 3' V3 | 4 samples (n= 2; x2 timepoints per sample) | ([GSEXXXXXX](GSEXXXXXX))
+    4. snRNAseq of post-mortem brain tissue | 10X 3' V3 | 3 samples | ([GSEXXXXXX](GSEXXXXXX))  
+    5. snRNAseq of surgically resected brain tissue with or without freezing time delay | 10X 3' V3 | 4 samples (n= 2; x2 timepoints per sample) | ([GSEXXXXXX](GSEXXXXXX))
 
 ### Processed Data
 All processed data files from Cell Ranger Count outputs are available via NCBI GEO.  Information on Cell Ranger and Genome Version can be found in each GEO record.
