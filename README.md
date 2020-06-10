@@ -9,18 +9,22 @@ Included is the code necessary to replicate the Seurat object used for analysis 
 - Where possible date of analysis performed prior to is specified.  To replicate analyses performed on specific date use of contained environment using [packrat](https://cran.r-project.org/web/packages/packrat/index.html) or [renv](https://cran.r-project.org/web/packages/renv/index.html) packages followed by date-specific version installation using [versions](https://cran.r-project.org/web/packages/versions/index.html) package is recommended.
 
 ## Data
-All the raw data (fastqs) and expression matrices are available at the Gene Expression Omnibus (GEO) under [GSEXXXXXXX](GSEXXXXXXX) (Coming soon). The data in this project can be broadly divided into 5 subprojects:
-- Single Cell Sequencing of Microglia with 4 different dissociation protocols; 12 samples (n=3 per group) ([GSEXXXXXXX](GSEXXXXXXX))
+All the raw data (fastqs) and expression matrices are available at the Gene Expression Omnibus (GEO) under [GSE152184](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE152184) (Coming soon). The data in this project can be broadly divided into 5 subprojects:
+- scRNAseq of microglia with 4 different dissociation protocols | 10X 3' V2 | 12 samples (n=3 per group) | ([GSE152183](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE152183))
+- scRNAseq of all CNS cells with or without inhibitors | 10X 3' V2 | 4 samples (n=2 per group) | ([GSE152182](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE152182))
+- scRNAseq of microglia (tail vein PBS injection) | 10X 3' V2 | 4 samples | ([GSEXXXXXX](GSEXXXXXX))
+- snRNAseq of post-mortem brain tissue | 10X 3' V3 | 3 samples | ([GSEXXXXXX](GSEXXXXXX))
+- snRNAseq of surgically resected brain tissue with or without freezing time delay | 10X 3' V3 | 4 samples (n= 2; x2 timepoints per sample) | ([GSEXXXXXX](GSEXXXXXX))
 
 ### Processed Data
 All processed data files from Cell Ranger Count outputs are available via NCBI GEO.  Information on Cell Ranger and Genome Version can be found in each GEO record.
 There are 3 files per library:
   1. GSM\*\_Sample_Name_barcodes.tsv.gz: corresponds to the cell barcodes (i.e. column names).
-  2. Sample_Name_features.tsv.gz: corresponds to the gene identifiers(i.e. row names).
-  3. Sample_Name_matrix.mtx.gz: expression matrix in sparse format.
+  2. GSM\*\Sample_Name_features.tsv.gz: corresponds to the gene identifiers(i.e. row names).
+  3. GSM\*\Sample_Name_matrix.mtx.gz: expression matrix in sparse format.
 
 ### fastq Files
 All raw data fastq files can be downloaded from SRA linked from NCBI GEO records.
 
 ## ** Scripts to Figures Guides **
-- Figures 1, SI Figures
+- Add when final version submitted
