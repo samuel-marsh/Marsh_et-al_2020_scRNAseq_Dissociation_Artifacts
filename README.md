@@ -9,9 +9,8 @@ Included is the code necessary to replicate the Seurat or LIGER (or both) object
     - Seurat V2.3.4 source package can be downloaded here from [CRAN Archive](https://cran.r-project.org/src/contrib/Archive/Seurat/) and installed from local source.
 
 - Where possible date of analysis performed prior to is specified.  To replicate analyses performed on specific date the following actions are recommended or described in code:
-  - Use of contained environment using [packrat](https://cran.r-project.org/web/packages/packrat/index.html) or [renv](https://cran.r-project.org/web/packages/renv/index.html) packages.
-  - Followed by date-specific version installation of CRAN packages using [versions](https://cran.r-project.org/web/packages/versions/index.html) package.
-  - Archived source versions of specific packages may also be needed depending on version of R.
+  - Use of contained environment using [packrat](https://cran.r-project.org/web/packages/packrat/index.html) or [renv](https://cran.r-project.org/web/packages/renv/index.html) packages. Followed by date-specific version installation of CRAN packages using [versions](https://cran.r-project.org/web/packages/versions/index.html) package.
+  - Archived source versions of specific packages may also be needed depending on version of R and can be downloaded from CRAN archives and installed from local source.
 
 - LIGER analyses were performed using the in development ["online"](https://github.com/MacoskoLab/liger/tree/online) branch, updating throughout analysis to accommodate bug fixes.  As such analysis code may not fully reproduce identical figures as presented in the paper.  Instances such as this are denoted in code and .RDS objects will be linked in code document.
   - LIGER analyses also utilize multiple versions of Seurat as specified in code for some of the following situations:
