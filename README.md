@@ -6,6 +6,7 @@ Included is the code necessary to replicate the Seurat or LIGER (or both) object
 - Each R file specifies version of Seurat/LIGER used for analysis/object creation.
     - Some analyses were performed across multiple versions of Seurat (V2 > V3).  In this scenario objects were updated to V3 using `UpdateSeuratObject`
     - Scripts specify point of upgrade to V3 in regard to analysis or object modification.
+    - Seurat V2.3.4 source package can be downloaded here from [CRAN Archive](https://cran.r-project.org/src/contrib/Archive/Seurat/) and installed from local source.
 
 - Where possible date of analysis performed prior to is specified.  To replicate analyses performed on specific date the following actions are recommended or described in code:
   - Use of contained environment using [packrat](https://cran.r-project.org/web/packages/packrat/index.html) or [renv](https://cran.r-project.org/web/packages/renv/index.html) packages.
@@ -13,6 +14,10 @@ Included is the code necessary to replicate the Seurat or LIGER (or both) object
   - Archived source versions of specific packages may also be needed depending on version of R.
 
 - LIGER analyses were performed using the in development ["online"](https://github.com/MacoskoLab/liger/tree/online) branch, updating throughout analysis to accommodate bug fixes.  As such analysis code may not fully reproduce identical figures as presented in the paper.  Instances such as this are denoted in code and .RDS objects will be linked in code document.
+  - LIGER analyses also utilize multiple versions of Seurat as specified in code for some of the following situations:
+    - Seurat V3 used used for data import, QC filtering (genes, UMIs, % mito), and final plotting due to more advanced plotting features and patchwork compatibility
+    - Seurat V2 was used during LIGER workflow to accommodate use of `clusterLouvainJaccard` function which relied on Seurat V2 object structure
+    - Conversion between Seurat and LIGER objects was performed using built in LIGER functions `seuratToLiger` and `ligerToSeurat`
 
 ## Data
 The data in this project can be broadly divided into 2 categories (5 sub-projects).  Please see [SI Table 1](LINK) for breakdown by sample and more information.
