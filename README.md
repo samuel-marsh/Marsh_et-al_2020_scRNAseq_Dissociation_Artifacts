@@ -9,7 +9,7 @@ Included is the code necessary to replicate the Seurat or LIGER (or both) object
 - Where possible date of analysis performed prior to is specified.  To replicate analyses performed on specific date use of contained environment using [packrat](https://cran.r-project.org/web/packages/packrat/index.html) or [renv](https://cran.r-project.org/web/packages/renv/index.html) packages followed by date-specific version installation using [versions](https://cran.r-project.org/web/packages/versions/index.html) package is recommended.
 
 ## Data
-The data in this project can be broadly divided into 2 categories (5 subprojects).  Please see [SI Table 1](SI Table 1 Link) for breakdown by sample and more information.
+The data in this project can be broadly divided into 2 categories (5 subprojects).  Please see [SI Table 1](LINK) for breakdown by sample and more information.
 
 ***For experiments 1-4***, all the raw data (fastqs) and expression matrices are available at the NCBI Gene Expression Omnibus (GEO) under [GSE152184](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE152184).   
 
