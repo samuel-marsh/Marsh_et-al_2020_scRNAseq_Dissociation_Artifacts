@@ -9,7 +9,10 @@ Included is the code necessary to replicate the Seurat object used for analysis 
 - Where possible date of analysis performed prior to is specified.  To replicate analyses performed on specific date use of contained environment using [packrat](https://cran.r-project.org/web/packages/packrat/index.html) or [renv](https://cran.r-project.org/web/packages/renv/index.html) packages followed by date-specific version installation using [versions](https://cran.r-project.org/web/packages/versions/index.html) package is recommended.
 
 ## Data
-All the raw data (fastqs) and expression matrices are available at the Gene Expression Omnibus (GEO) under [GSE152184](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE152184). The data in this project can be broadly divided into 2 categories (5 subprojects):  
+The data in this project can be broadly divided into 2 categories (5 subprojects):
+For experiments 1-4, all the raw data (fastqs) and expression matrices are available at the NCBI Gene Expression Omnibus (GEO) under [GSE152184](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE152184).   
+
+For experiment 5, the raw data (fastqs) and expression matrices are available through the European phenome-Genome Archive (EGA) (Accession ID: [EGADXXXXXXX[](EGADXXXXXXX))
 
 **scRNAseq of mouse brain or sorted myeloid cells**
 
