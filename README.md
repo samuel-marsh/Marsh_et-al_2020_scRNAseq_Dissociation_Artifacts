@@ -1,18 +1,19 @@
 # Marsh_et-al_2020_scRNAseq_Dissociation_Artifacts
 Code to reproduce analysis objects for the data contained in (CITATION AND LINK HERE)
 
-Included is the code necessary to replicate the Seurat object used for analysis and plotting.
-- Each R file specifies version of Seurat used for analysis/object creation.
+Included is the code necessary to replicate the Seurat or LIGER (or both) objects used for analysis and plotting.
+- Each R file specifies version of Seurat/LIGER used for analysis/object creation.
     - Some analyses were performed across multiple versions of Seurat (V2 > V3).  In this scenario objects were updated to V3 using `UpdateSeuratObject`
     - Scripts specify point of upgrade to V3 in regard to analysis or object modification.
 
 - Where possible date of analysis performed prior to is specified.  To replicate analyses performed on specific date use of contained environment using [packrat](https://cran.r-project.org/web/packages/packrat/index.html) or [renv](https://cran.r-project.org/web/packages/renv/index.html) packages followed by date-specific version installation using [versions](https://cran.r-project.org/web/packages/versions/index.html) package is recommended.
 
 ## Data
-The data in this project can be broadly divided into 2 categories (5 subprojects):
-For experiments 1-4, all the raw data (fastqs) and expression matrices are available at the NCBI Gene Expression Omnibus (GEO) under [GSE152184](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE152184).   
+The data in this project can be broadly divided into 2 categories (5 subprojects).  Please see [SI Table 1](SI Table 1 Link) for breakdown by sample and more information.
 
-For experiment 5, the raw data (fastqs) and expression matrices are available through the European phenome-Genome Archive (EGA) (Accession ID: [EGADXXXXXXX[](EGADXXXXXXX))
+***For experiments 1-4***, all the raw data (fastqs) and expression matrices are available at the NCBI Gene Expression Omnibus (GEO) under [GSE152184](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE152184).   
+
+For experiment 5, the raw data (fastqs) and expression matrices are available through the European phenome-Genome Archive (EGA) (Accession ID: [EGADXXXXXXX](EGADXXXXXXX))
 
 **scRNAseq of mouse brain or sorted myeloid cells**
 
@@ -26,14 +27,15 @@ For experiment 5, the raw data (fastqs) and expression matrices are available th
   5. snRNAseq of surgically resected brain tissue with or without freezing time delay | 10X 3' V3 | 4 samples (n= 2; x2 timepoints per sample) | ([GSEXXXXXX](GSEXXXXXX))
 
 ### Processed Data
-All processed data files from Cell Ranger Count outputs are available via NCBI GEO.  Information on Cell Ranger and Genome Version can be found in each GEO record.
-There are 3 files per library:
+**Experiments 1-4**
+All processed data files from Cell Ranger `count` outputs are available via NCBI GEO.  Information on Cell Ranger version and Genome/Annotation version can be found in each GEO record.
+There are 3 processed data files per library:
   1. GSM\*\_Sample_Name_barcodes.tsv.gz: corresponds to the cell barcodes (i.e. column names).
   2. GSM\*\_Sample_Name_features.tsv.gz: corresponds to the gene identifiers (i.e. row names).
   3. GSM\*\_Sample_Name_matrix.mtx.gz: expression matrix in sparse format.
 
-### fastq Files
-All raw data fastq files can be downloaded from SRA linked from NCBI GEO records.
+### Raw fastq Files
+All raw data fastq files can be downloaded from SRA linked from NCBI GEO records or from EGA.
 
 ## ** Scripts to Figures Guides **
 - Add when final version submitted
