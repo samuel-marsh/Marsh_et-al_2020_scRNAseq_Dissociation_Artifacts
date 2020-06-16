@@ -56,8 +56,8 @@ Reanalyzed data from literature is summarized detailed in table below.
 | Zywitza et al. | Mouse | scRNAseq (Drop-Seq) | [GSE111527](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE111527) | [Zywitza et al., 2018 (Cell Reports)](https://www.cell.com/cell-reports/fulltext/S2211-1247(18)31732-7?) |
 | Mizrak et al. | Mouse | scRNAseq (Microwell Seq) | [GSE109447](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE109447) | [Mizrak et al., 2019 (Cell Reports)](https://www.cell.com/cell-reports/fulltext/S2211-1247(18)31974-0?) |
 | Zeisel et al. | Mouse | scRNAseq (10X 3' V1 & V2) | [mousebrain.org](mousebrain.org) | [Zeisel et al., 2018 (Cell)](https://www.cell.com/cell/fulltext/S0092-8674(18)30789-X?) |
-| Hammond et al. | Mouse | scRNAseq (10X 3' V1 & V2) | [GSE121654](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE121654) | [Hammond et al., 2019](https://www.cell.com/immunity/fulltext/S1074-7613(18)30485-0?) |
-| Zhou et al. | Human | snRNAseq (10X 5' V1) | [syn21670836](https://adknowledgeportal.synapse.org/Explore/Studies?Study=syn21670836) | [Zhou et al., 2020](https://www.nature.com/articles/s41591-019-0695-9?) |
+| Hammond et al. | Mouse | scRNAseq (10X 3' V1 & V2) | [GSE121654](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE121654) | [Hammond et al., 2019 (Immunity)](https://www.cell.com/immunity/fulltext/S1074-7613(18)30485-0?) |
+| Zhou et al. | Human | snRNAseq (10X 5' V1) | [syn21670836](https://adknowledgeportal.synapse.org/Explore/Studies?Study=syn21670836) | [Zhou et al., 2020 (Nature Medicine)](https://www.nature.com/articles/s41591-019-0695-9?) |
 | Dataset | Species | Seq | [Data](link) | [Publication](link) |
 | Dataset | Species | Seq | [Data](link) | [Publication](link) |
 | Dataset | Species | Seq | [Data](link) | [Publication](link) |
