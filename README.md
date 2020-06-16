@@ -48,10 +48,16 @@ There are 3 processed data files per library:
 All raw data fastq files can be downloaded from SRA linked from NCBI GEO records or from EGA.
 
 ### Literature Reanalysis
-Reanalyzed data from literature is detailed in table below.
+Reanalyzed data from literature is summarized detailed in table below.
 | Dataset | Species | Seq Used | Raw/Processed Data | Publication |
 | ------- | ------- | -------- | ------------------ | ----------- |
 | Mathys et al. | Mouse | scRNAseq (Smart-seq2) | [GEO103334](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE103334) & Authors | [Mathys et al., 2017 (Cell Reports)](https://www.cell.com/cell-reports/fulltext/S2211-1247(17)31314-1?) |
+| Plemel et al. | Mouse | scRNAseq (10X 3' V2) | [GSE115803](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE115803) | [Plemel et al., 2020 (Science Advances)](https://advances.sciencemag.org/content/6/3/eaay6324) |
+| Zywitza et al. | Mouse | scRNAseq (Drop-Seq) | [GSE111527](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE111527) | [Zywitza et al., 2018 (Cell Reports)](https://www.cell.com/cell-reports/fulltext/S2211-1247(18)31732-7?) |
+| Mizrak et al. | Mouse | scRNAseq (Microwell Seq) | [GSE109447](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE109447) | [Mizrak et al., 2019 (Cell Reports)](https://www.cell.com/cell-reports/fulltext/S2211-1247(18)31974-0?) |
+| Zeisel et al. | Mouse | scRNAseq (10X 3' V1 & V2) | [mousebrain.org](mousebrain.org) | [Zeisel et al., 2018 (Cell)](https://www.cell.com/cell/fulltext/S0092-8674(18)30789-X?) |
+| Hammond et al. | Mouse | scRNAseq (10X 3' V1 & V2) | [GSE121654](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE121654) | [Hammond et al., 2019](https://www.cell.com/immunity/fulltext/S1074-7613(18)30485-0?) |
+
 
 
 ## ** Scripts to Figures Guides **
