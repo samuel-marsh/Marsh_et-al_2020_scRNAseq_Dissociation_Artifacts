@@ -47,5 +47,12 @@ There are 3 processed data files per library:
 ### Raw fastq Files
 All raw data fastq files can be downloaded from SRA linked from NCBI GEO records or from EGA.
 
+### Literature Reanalysis
+Reanalyzed data from literature is detailed in table below.
+| Dataset | Species | Seq Used | Raw/Processed Data | Publication |
+| ------- | ------- | -------- | ------------------ | ----------- |
+| Mathys et al. | Mouse | scRNAseq (Smart-seq2) | [GEO103334](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE103334) & Authors | [Mathys et al., 2017 (Cell Reports)] (https://www.cell.com/cell-reports/fulltext/S2211-1247(17)31314-1?) |
+
+
 ## ** Scripts to Figures Guides **
 - Add when final version submitted
