@@ -20,7 +20,8 @@ Included is the code necessary to replicate the Seurat or LIGER (or both) object
     - Seurat V2 was used during LIGER workflow to accommodate use of `clusterLouvainJaccard` function which relied on Seurat V2 object structure
     - Conversion between Seurat and LIGER objects was performed using built in LIGER functions `seuratToLiger` and `ligerToSeurat`
 
-## Data
+## Data  
+### Original Data
 The data in this project can be broadly divided into 2 categories (5 sub-projects).  Please see [SI Table 1](LINK) for breakdown by sample and more information.
 
 ***For experiments 1-4***, all the raw data (fastqs) and expression matrices are available at the NCBI Gene Expression Omnibus (GEO) under [GSE152184](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE152184).   
