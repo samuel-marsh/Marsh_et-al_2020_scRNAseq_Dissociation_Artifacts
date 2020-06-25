@@ -1,6 +1,6 @@
 # Marsh_et-al_2020_scRNAseq_Dissociation_Artifacts  
 #### Code to reproduce analysis objects for the data contained in:  
-[Tissue Processing and Enzymatic Dissociation Induce Artifactual Gene Expression of Brain Cell Populations in Mice and Humans](CITATION)  
+**[Tissue Processing and Enzymatic Dissociation Induce Artifactual Gene Expression of Brain Cell Populations in Mice and Humans]**(CITATION)  
 Samuel E. Marsh, Tushar Kamath, Timothy R. Hammond, Alec J. Walker, Lasse Dissing-Olesen, Adam M.H. Young, Abdul Abdul, Naeem Nadaf, Connor Dufort, Sarah Murphy, Velina Kozareva, Charles Vanderburg, Soyon Hong, Harry Bulstrode, Peter J. Hutchinson, Robin J.M. Franklin, Evan Macosko, & Beth Stevens
 
 ## Code
