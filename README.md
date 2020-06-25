@@ -14,7 +14,7 @@ Included is the code necessary to replicate the Seurat or LIGER (or both) object
   - Use of contained environment using [packrat](https://cran.r-project.org/web/packages/packrat/index.html) or [renv](https://cran.r-project.org/web/packages/renv/index.html) packages. Followed by date-specific version installation of CRAN packages using [versions](https://cran.r-project.org/web/packages/versions/index.html) package.
   - Archived source versions of specific packages may also be needed depending on version of R and can be downloaded from CRAN archives and installed from local source.
 
-- LIGER analyses were performed using the in development ["online"](https://github.com/MacoskoLab/liger/tree/online) branch, updating throughout analysis to accommodate bug fixes.  As such analysis code may not fully reproduce identical figures as presented in the paper.  Instances such as this are denoted in code and .RDS objects will be linked in code document.
+- LIGER analyses were performed using the in development ["online"](https://github.com/MacoskoLab/liger/tree/online) branch, updating throughout analysis to accommodate bug fixes.  
   - LIGER analyses also utilize multiple versions of Seurat as specified in code for some of the following situations:
     - Seurat V3 used used for data import, QC filtering (genes, UMIs, % mito), and final plotting due to more advanced plotting features and patchwork compatibility
     - Seurat V2 was used during LIGER workflow to accommodate use of `clusterLouvainJaccard` function which relied on Seurat V2 object structure
@@ -65,8 +65,3 @@ Reanalyzed data from literature is summarized detailed in table below.
 | Morabito | Human | snRNAseq (10X 3' V3) | [syn18915937](https://www.synapse.org/#!Synapse:syn18915937/wiki/592740) | [Morabito et al., 2019 (biorxiv)](https://www.biorxiv.org/content/10.1101/695221v1) |
 | Dataset | Species | Seq | [Data](link) | [Publication](link) |
 | Dataset | Species | Seq | [Data](link) | [Publication](link) |
-
-
-
-## ** Scripts to Figures Guides **
-- Add when final version submitted
