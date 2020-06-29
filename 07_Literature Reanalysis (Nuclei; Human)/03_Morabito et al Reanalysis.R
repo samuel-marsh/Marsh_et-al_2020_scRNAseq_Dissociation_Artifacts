@@ -339,6 +339,3 @@ morabito_cleaned_annotation <- tibble::tribble(
   31L,     "astro",   "forestgreen"
 )
 
-morabito_cleaned_cluster_colors <- morabito_cleaned_annotation %>% 
-  pull(color)
-
