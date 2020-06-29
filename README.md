@@ -65,3 +65,9 @@ Reanalyzed data from literature is summarized detailed in table below.
 | Morabito | Human | snRNAseq (10X 3' V3) | [syn18915937](https://www.synapse.org/#!Synapse:syn18915937/wiki/592740) | [Morabito et al., 2019 (biorxiv)](https://www.biorxiv.org/content/10.1101/695221v1) |
 | Dataset | Species | Seq | [Data](link) | [Publication](link) |
 | Dataset | Species | Seq | [Data](link) | [Publication](link) |
+
+
+### Acknowledgements:
+The analysis and results published here for Zhou et al., 2020 and Mathys et al., 2019 in whole or in part are based on data obtained from the AMP-AD Knowledge Portal (https://adknowledgeportal.synapse.org/). Samples for this study were provided by the Rush Alzheimer’s Disease Center, Rush University Medical Center, Chicago. Data collection was supported through funding by NIA grants P30AG10161, R01AG15819, R01AG17917, R01AG30146, R01AG36836, U01AG32984, U01AG46152, the Illinois Department of Public Health, and the Translational Genomics Research Institute. ROSMAP data can be requested at https://www.radc.rush.edu. Specific datasets for which additional analyses were performed are available from the Synapse database under accession number syn18485175 (Mathys) or syn21670836 (Zhou).  Additional ROSMAP data can be requested at https://www.radc.rush.edu.
+
+The analysis and results published here for Morabito et al., 2019 are based on reanalysis of study data (available via Synapse: syn18915937) that were provided by Dr. Vivek Swarup, Institute for Memory Impairments and Neurological Disorders, University of California, Irvine.  Data collection was supported through funding UCI Startup funds and American Federation of Aging Research.
