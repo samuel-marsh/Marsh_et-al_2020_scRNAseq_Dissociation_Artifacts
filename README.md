@@ -52,7 +52,7 @@ All raw data fastq files can be downloaded from SRA linked from NCBI GEO records
 
 ### Literature Reanalysis
 Reanalyzed data from literature is summarized detailed in table below.
-| Dataset | Species | Seq Used | Raw/Processed Data | Publication |
+| Dataset | Species | Seq Used | Raw/Count Data | Publication |
 | :-----: | :-----: | :------: | :----------------: | :---------: |
 | Mathys | Mouse | scRNAseq (Smart-seq2) | [GEO103334](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE103334) & Authors | [Mathys et al., 2017 (Cell Reports)](https://www.cell.com/cell-reports/fulltext/S2211-1247(17)31314-1?) |
 | Plemel | Mouse | scRNAseq (10X 3' V2) | [GSE115803](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE115803) | [Plemel et al., 2020 (Science Advances)](https://advances.sciencemag.org/content/6/3/eaay6324) |
