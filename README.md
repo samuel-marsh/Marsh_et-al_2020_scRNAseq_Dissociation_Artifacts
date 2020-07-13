@@ -61,7 +61,6 @@ Reanalyzed data from literature is summarized detailed in table below.
 | Zeisel | Mouse | scRNAseq (10X 3' V1 & V2) | [mousebrain.org](mousebrain.org) | [Zeisel et al., 2018 (Cell)](https://www.cell.com/cell/fulltext/S0092-8674(18)30789-X?) |
 | Hammond | Mouse | scRNAseq (10X 3' V1 & V2) | [GSE121654](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE121654) | [Hammond et al., 2019 (Immunity)](https://www.cell.com/immunity/fulltext/S1074-7613(18)30485-0?) |
 | Zhou | Human | snRNAseq (10X 5' V1) | [syn21670836](https://adknowledgeportal.synapse.org/Explore/Studies/DetailsPage?Study=syn21670836) | [Zhou et al., 2020 (Nature Medicine)](https://www.nature.com/articles/s41591-019-0695-9?) |
-| Mathys (Hu) | Human | snRNAseq (10X 3' V2) | [syn18485175](https://adknowledgeportal.synapse.org/Explore/Studies/DetailsPage?Study=syn18485175) | [Mathys et al., 2019 (Nature)](https://www.nature.com/articles/s41586-019-1195-2) |
 | Morabito | Human | snRNAseq (10X 3' V3) | [syn18915937](https://www.synapse.org/#!Synapse:syn18915937/wiki/592740) | [Morabito et al., 2019 (biorxiv)](https://www.biorxiv.org/content/10.1101/695221v1) |
 | Leng | Human | snRNAseq (10X 3' V2) | [GSE147528](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE147528) | [Leng & Li et al., 2020 (biorxiv)](https://www.biorxiv.org/content/10.1101/2020.04.04.025825v2) |
 | Dataset | Species | Seq | [Data](link) | [Publication](link) |
