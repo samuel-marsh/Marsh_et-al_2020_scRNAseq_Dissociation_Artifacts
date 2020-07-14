@@ -3,9 +3,9 @@
 [**Tissue Processing and Enzymatic Dissociation Induce Artifactual Gene Expression of Brain Cell Populations in Mice and Humans**](CITATION)  
 Samuel E. Marsh<sup>1,\* </sup>, Tushar Kamath<sup>1</sup>, Timothy R. Hammond<sup>2</sup>, Alec J. Walker, Lasse Dissing-Olesen, Adam M.H. Young, Abdul Abdul, Naeem Nadaf, Connor Dufort, Sarah Murphy, Velina Kozareva<sup>2</sup>, Charles Vanderburg, Soyon Hong, Harry Bulstrode, Peter J. Hutchinson, Robin J.M. Franklin, Evan Macosko, & Beth Stevens
 
-<sup><sup>1</sup>*Performed analysis*</sup>   
-<sup><sup>2</sup>*Assisted analysis*</sup>  
-<sup><sup>\*</sup>*Analysis lead*</sup>  
+<sup><sup>1</sup>Performed analysis</sup>   
+<sup><sup>2</sup>Assisted analysis</sup>  
+<sup><sup>\*</sup>Analysis lead</sup>  
 
 ## Code
 Included is the code necessary to replicate the Seurat or LIGER (or both) objects used for analysis and plotting.
