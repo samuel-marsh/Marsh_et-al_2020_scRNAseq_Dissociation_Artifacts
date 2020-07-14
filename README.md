@@ -17,7 +17,7 @@ Included is the code necessary to replicate the Seurat or LIGER (or both) object
 - LIGER analyses were performed using the in development ["online"](https://github.com/MacoskoLab/liger/tree/online) branch, updating throughout analysis to accommodate bug fixes.  
   - LIGER analyses also utilize multiple versions of Seurat as specified in code for some of the following situations:
     - Seurat V3 used used for data import, QC filtering (genes, UMIs, % mito), and final plotting due to more advanced plotting features and patchwork compatibility
-    - Seurat V2 was used during LIGER workflow to accommodate use of `clusterLouvainJaccard` function which relied on Seurat V2 object structure
+    - Seurat V2 was used during LIGER workflow to accommodate use of now deprecated `clusterLouvainJaccard` function which relied on Seurat V2 object structure
     - Conversion between Seurat and LIGER objects was performed using built in LIGER functions `seuratToLiger` and `ligerToSeurat`
 
 ## Data  
