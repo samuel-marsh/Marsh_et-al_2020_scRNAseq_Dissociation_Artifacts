@@ -1,6 +1,6 @@
 # Marsh_et-al_2020_scRNAseq_Dissociation_Artifacts  
 #### Code to reproduce analysis objects for the data contained in:  
-[**Tissue Processing and Enzymatic Dissociation Induce Artifactual Gene Expression of Brain Cell Populations in Mice and Humans**](CITATION)  
+[**Tissue Processing and Enzymatic Dissociation Induce Artifactual Gene Expression in Brain Cell Populations of Mice and Humans**](CITATION)  
 Samuel E. Marsh<sup>1,\* </sup>, Tushar Kamath<sup>1</sup>, Timothy R. Hammond<sup>2</sup>, Alec J. Walker, Lasse Dissing-Olesen, Adam M.H. Young, Abdul Abdul, Naeem Nadaf, Connor Dufort, Sarah Murphy, Velina Kozareva<sup>2</sup>, Charles Vanderburg, Soyon Hong, Harry Bulstrode, Peter J. Hutchinson, Robin J.M. Franklin, Evan Macosko, & Beth Stevens
 
 <sup><sup>1</sup>Performed analysis</sup>   
@@ -21,7 +21,7 @@ Included is the code necessary to replicate the Seurat or LIGER (or both) object
 - LIGER analyses were performed using the in development ["online"](https://github.com/MacoskoLab/liger/tree/online) branch, updating throughout analysis to accommodate bug fixes.  
   - LIGER analyses also utilize multiple versions of Seurat as specified in code for some of the following situations:
     - Seurat V3 used used for data import, QC filtering (genes, UMIs, % mito), and final plotting due to more advanced plotting features and patchwork compatibility
-    - Seurat V2 was used during LIGER workflow to accommodate use of now deprecated `clusterLouvainJaccard` function which relied on Seurat V2 object structure
+    - Seurat V2 was used during LIGER workflow to accommodate use of now deprecated [`clusterLouvainJaccard` function](https://github.com/samuel-marsh/Marsh_et-al_2020_scRNAseq_Dissociation_Artifacts/tree/master/08_Misc) which relied on Seurat V2 object structure
     - Conversion between Seurat and LIGER objects was performed using built in LIGER functions `seuratToLiger` and `ligerToSeurat`
 
 ## Data  
