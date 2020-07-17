@@ -58,7 +58,7 @@ All raw data fastq files can be downloaded from SRA linked from NCBI GEO records
 Reanalyzed data from literature is summarized detailed in table below.
 | Dataset | Species | Seq Used | Raw/Count Data | Publication |
 | :-----: | :-----: | :------: | :----------------: | :---------: |
-| Mathys | Mouse | scRNAseq <br> (Smart-seq2) | [GEO103334](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE103334) & Authors | [Mathys et al., 2017 (Cell Reports)](https://www.cell.com/cell-reports/fulltext/S2211-1247(17)31314-1?) |
+| Mathys | Mouse | scRNAseq (Smart-seq2) | [GEO103334](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE103334) & Authors | [Mathys et al., 2017 <br> (Cell Reports)](https://www.cell.com/cell-reports/fulltext/S2211-1247(17)31314-1?) |
 | Plemel | Mouse | scRNAseq (10X 3' V2) | [GSE115803](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE115803) | [Plemel et al., 2020 (Science Advances)](https://advances.sciencemag.org/content/6/3/eaay6324) |
 | Zywitza | Mouse | scRNAseq (Drop-Seq) | [GSE111527](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE111527) | [Zywitza et al., 2018 (Cell Reports)](https://www.cell.com/cell-reports/fulltext/S2211-1247(18)31732-7?) |
 | Mizrak | Mouse | scRNAseq (Microwell Seq) | [GSE109447](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE109447) | [Mizrak et al., 2019 (Cell Reports)](https://www.cell.com/cell-reports/fulltext/S2211-1247(18)31974-0?) |
@@ -66,7 +66,8 @@ Reanalyzed data from literature is summarized detailed in table below.
 | Hammond | Mouse | scRNAseq (10X 3' V1 & V2) | [GSE121654](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE121654) | [Hammond et al., 2019 (Immunity)](https://www.cell.com/immunity/fulltext/S1074-7613(18)30485-0?) |
 | Zhou | Human | snRNAseq (10X 5' V1) | [syn21670836](https://adknowledgeportal.synapse.org/Explore/Studies/DetailsPage?Study=syn21670836) | [Zhou et al., 2020 (Nature Medicine)](https://www.nature.com/articles/s41591-019-0695-9?) |
 | Morabito | Human | snRNAseq (10X 3' V3) | [syn18915937](https://www.synapse.org/#!Synapse:syn18915937/wiki/592740) | [Morabito et al., 2019 (biorxiv)](https://www.biorxiv.org/content/10.1101/695221v1) |
-| Leng | Human | snRNAseq (10X 3' V2) | [GSE147528](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE147528) | [Leng & Li et al., 2020 (biorxiv)](https://www.biorxiv.org/content/10.1101/2020.04.04.025825v2) |
+| Leng | Human | snRNAseq <br> (10X 3' V2) | [GSE147528](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE147528) | [Leng & Li et al., 2020 (biorxiv)](https://www.biorxiv.org/content/10.1101/2020.04.04.025825v2) |
+| Leng | Human | snRNAseq (10X 3' V2) | [GSE147528](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE147528) | [Leng & Li et al., 2020 <br> (biorxiv)](https://www.biorxiv.org/content/10.1101/2020.04.04.025825v2) |
 | Dataset | Species | Seq | [Data](link) | [Publication](link) |
 
 
