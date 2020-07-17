@@ -58,7 +58,7 @@ All raw data fastq files can be downloaded from SRA linked from NCBI GEO records
 Reanalyzed data from literature is summarized detailed in table below.
 | Dataset | Species | Seq Used | Raw/Count Data | Publication |
 | :-----: | :-----: | :------: | :----------------: | :---------: |
-| Mathys | Mouse | scRNAseq (Smart-seq2) | [GEO103334](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE103334) & Authors | [Mathys et al., 2017 <br> (Cell Reports)](https://www.cell.com/cell-reports/fulltext/S2211-1247(17)31314-1?) |
+| Mathys | Mouse | scRNAseq (Smart-seq2) | [GEO103334](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE103334) <br> & Authors | [Mathys et al., 2017 <br> (Cell Reports)](https://www.cell.com/cell-reports/fulltext/S2211-1247(17)31314-1?) |
 | Plemel | Mouse | scRNAseq (10X 3' V2) | [GSE115803](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE115803) | [Plemel et al., 2020 <br> (Science Advances)](https://advances.sciencemag.org/content/6/3/eaay6324) |
 | Zywitza | Mouse | scRNAseq (Drop-Seq) | [GSE111527](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE111527) | [Zywitza et al., 2018 <br> (Cell Reports)](https://www.cell.com/cell-reports/fulltext/S2211-1247(18)31732-7?) |
 | Mizrak | Mouse | scRNAseq (Microwell Seq) | [GSE109447](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE109447) | [Mizrak et al., 2019 <br> (Cell Reports)](https://www.cell.com/cell-reports/fulltext/S2211-1247(18)31974-0?) |
