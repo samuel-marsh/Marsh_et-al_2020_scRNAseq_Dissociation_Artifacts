@@ -29,7 +29,7 @@ DimPlot_All_Samples_Liger <- function(liger_object, cell_data_column = "dataset"
   column_list <- as.character(unique(liger_object@cell.data[, "dataset"]))
   # Pull reduc coordinates
   reduc_coordinates <- data.frame(liger_object@tsne.coords)
-  colnames(reduc_coordinates) <- c("tsne1", "tsne2")
+  colnames(reduc_coordinates) <- c("dr1", "dr2")
   x_axis <- c(min(reduc_coordinates[, 1]),
               max(reduc_coordinates[, 1]))
   y_axis <- c(min(reduc_coordinates[, 2]),
