@@ -67,7 +67,8 @@ Reanalyzed data from literature is summarized detailed in table below.
 | Zhou | Human | snRNAseq (10X 5' V1) | [syn21670836](https://adknowledgeportal.synapse.org/Explore/Studies/DetailsPage?Study=syn21670836) | [Zhou et al., 2020 <br> (Nature Medicine)](https://www.nature.com/articles/s41591-019-0695-9?) |
 | Morabito | Human | snRNAseq (10X 3' V3) | [syn18915937](https://www.synapse.org/#!Synapse:syn18915937/wiki/592740) | [Morabito et al., 2019 <br> (biorxiv)](https://www.biorxiv.org/content/10.1101/695221v1) |
 | Leng | Human | snRNAseq (10X 3' V2) | [GSE147528](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE147528) <br> & [syn21788402<sup>b</sup>](https://www.synapse.org/#!Synapse:syn21788402/wiki/601825) | [Leng & Li et al., 2020 <br> (biorxiv)](https://www.biorxiv.org/content/10.1101/2020.04.04.025825v2) |
-| Dataset | Species | Seq | [Data](link) | [Publication](link) |  
+| Dataset | Species | Seq | [Data](link) | [Publication](link) |
+| <td colspan=5> test |
 
 <sup><sup>a</sup>Raw fastq files and FPKM processed file linked through GEO.  Raw count matrix via personal communication with authors.</sup>   
 <sup><sup>b</sup>Synapse post-QC files used for analysis.  GEO records contain all barcode (unfiltered) HDF5 files.</sup>
