@@ -70,7 +70,7 @@ Reanalyzed data from literature is summarized detailed in table below.
 | Dataset | Species | Seq | [Data](link) | [Publication](link) |
 
 <sup><sup>a</sup>Raw fastq files and FPKM processed file linked through GEO.  Raw count matrix via personal communication with authors.</sup>   
-<sup><sup>b</sup>Synapse post-QC files used for analysis.  GEO records contain all barcode (unfiltered) HDF5 files.</sup>
+<sup><sup>b</sup>Data on synapse are post-QC and were used for re-analysis.  GEO records contain the all barcodes (unfiltered) HDF5 files.</sup>
 
 
 
