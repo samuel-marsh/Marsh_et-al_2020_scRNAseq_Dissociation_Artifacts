@@ -66,7 +66,7 @@ Reanalyzed data from literature is summarized detailed in table below.
 | Hammond | Mouse | scRNAseq (10X 3' V1 & V2) | [GSE121654](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE121654) | [Hammond et al., 2019 <br> (Immunity)](https://www.cell.com/immunity/fulltext/S1074-7613(18)30485-0?) |
 | Zhou | Human | snRNAseq (10X 5' V1) | [syn21670836](https://adknowledgeportal.synapse.org/Explore/Studies/DetailsPage?Study=syn21670836) | [Zhou et al., 2020 <br> (Nature Medicine)](https://www.nature.com/articles/s41591-019-0695-9?) |
 | Morabito | Human | snRNAseq (10X 3' V3) | [syn18915937](https://www.synapse.org/#!Synapse:syn18915937/wiki/592740) | [Morabito et al., 2019 <br> (biorxiv)](https://www.biorxiv.org/content/10.1101/695221v1) |
-| Leng & Li<sup>c</sup> | Human | snRNAseq (10X 3' V2) | [syn21788402](https://www.synapse.org/#!Synapse:syn21788402/wiki/601825)<sup>b</sup> <br> & [GSE147528](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE147528) | [Leng & Li et al., 2020 <br> (biorxiv)](https://www.biorxiv.org/content/10.1101/2020.04.04.025825v2) |
+| Leng & Li<sup>b</sup> | Human | snRNAseq (10X 3' V2) | [syn21788402](https://www.synapse.org/#!Synapse:syn21788402/wiki/601825)<sup>b</sup> <br> & [GSE147528](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE147528) | [Leng & Li et al., 2020 <br> (biorxiv)](https://www.biorxiv.org/content/10.1101/2020.04.04.025825v2) |
 | Dataset | Species | Seq | [Data](link) | [Publication](link) |
 
 <sup><sup>a</sup>FPKM data and access to raw fastq files via GEO.  Raw count matrix was obtained via personal communication with authors.</sup>
