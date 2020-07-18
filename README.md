@@ -69,7 +69,7 @@ Reanalyzed data from literature is summarized detailed in table below.
 | Leng & Li<sup>b</sup> | Human | snRNAseq (10X 3' V2) | [syn21788402](https://www.synapse.org/#!Synapse:syn21788402/wiki/601825)<sup>b</sup> <br> & [GSE147528](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE147528) | [Leng & Li et al., 2020 <br> (biorxiv)](https://www.biorxiv.org/content/10.1101/2020.04.04.025825v2) |
 | Dataset | Species | Seq | [Data](link) | [Publication](link) |
 
-<sup><sup>a</sup>FPKM data and access to raw fastq files via GEO.  Raw count matrix was obtained via personal communication with authors.</sup>
+<sup><sup>a</sup>FPKM data and access to raw fastq files via GEO.  Raw count matrix was obtained via personal communication with authors.</sup>  
 <sup><sup>b</sup>Additional metadata obtained via personal communication with the authors</sup>     
 <sup><sup>c</sup>Data on synapse are post-QC and were used for re-analysis.  GEO records contain the all barcodes (unfiltered) HDF5 cellranger output files and fastqs.</sup>
 
