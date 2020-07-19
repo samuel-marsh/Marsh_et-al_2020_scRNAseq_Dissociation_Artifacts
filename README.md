@@ -13,6 +13,7 @@ Included is the code necessary to replicate the Seurat or LIGER (or both) object
     - Some analyses were performed across multiple versions of Seurat (V2 > V3).  In this scenario objects were updated to V3 using `UpdateSeuratObject`
     - Scripts specify point of upgrade to V3 in regard to analysis or object modification.
     - Seurat V2.3.4 source package can be downloaded here from [CRAN Archive](https://cran.r-project.org/src/contrib/Archive/Seurat/) and installed from local source.
+    - Seurat V3.2.0 was released near the end of analysis.  To maintain consistency Seurat V3.1.5 was downloaded from [CRAN Archive](https://cran.r-project.org/src/contrib/Archive/Seurat/) and installed from local source when switching between V2 and V3 was necessary.  
 
 - Where possible date of analysis performed prior to is specified.  To replicate analyses performed on specific date the following actions are recommended or described in code:
   - Use of contained environment using [packrat](https://cran.r-project.org/web/packages/packrat/index.html) or [renv](https://cran.r-project.org/web/packages/renv/index.html) packages. Followed by date-specific version installation of CRAN packages using [versions](https://cran.r-project.org/web/packages/versions/index.html) package.
@@ -57,7 +58,7 @@ All raw data fastq files can be downloaded from SRA linked from NCBI GEO records
 ### Literature Reanalysis
 Reanalyzed data from literature is summarized detailed in table below.
 | Dataset | Species | Seq Used | Raw/Count Data | Publication |
-| :-----: | :-----: | :------: | :----------------: | :---------: |
+| :-----: | :-----: | :------: | :------------: | :---------: |
 | Mathys | Mouse | scRNAseq (Smart-seq2) | [GEO103334](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE103334) <br> & Authors<sup>a</sup> | [Mathys et al., 2017 <br> (Cell Reports)](https://www.cell.com/cell-reports/fulltext/S2211-1247(17)31314-1?) |
 | Plemel | Mouse | scRNAseq (10X 3' V2) | [GSE115803](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE115803) | [Plemel et al., 2020 <br> (Science Advances)](https://advances.sciencemag.org/content/6/3/eaay6324) |
 | Zywitza | Mouse | scRNAseq (Drop-Seq) | [GSE111527](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE111527) | [Zywitza et al., 2018 <br> (Cell Reports)](https://www.cell.com/cell-reports/fulltext/S2211-1247(18)31732-7?) |
@@ -73,6 +74,10 @@ Reanalyzed data from literature is summarized detailed in table below.
 <sup><sup>b</sup>Additional metadata obtained via personal communication with the authors</sup>     
 <sup><sup>c</sup>Data on synapse are post-QC and were used for re-analysis.  GEO records contain the all barcodes (unfiltered) HDF5 cellranger output files and fastqs.</sup>
 
+#### Human Data Reanalysis Meta Data
+Meta data for human data was assembled from published SI Tables, public data on synapse, or restricted access data on synapse
+  - Compiled publicly available meta data variables for each human dataset can be [SI Table 1](LINK).
+  - "DUC" in the table indicates data available from synapse following submission and approval of Data Use Certificate.
 
 
 ### Acknowledgements:
