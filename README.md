@@ -76,7 +76,7 @@ Reanalyzed data from literature is summarized detailed in table below.
 
 #### Human Data Reanalysis Meta Data
 Meta data for human data was assembled from published SI Tables, public data on synapse, or restricted access data on synapse
-  - Compiled publicly available meta data variables for each human dataset can be [SI Table 1](LINK).
+  - Compiled publicly available meta data variables for each human dataset can be found in [SI Table 1](LINK).
   - "DUC" in the table indicates data available from synapse following submission and approval of Data Use Certificate.
 
 
