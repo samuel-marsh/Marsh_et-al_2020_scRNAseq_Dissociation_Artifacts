@@ -10,7 +10,6 @@ library(viridis)
 library(liger)
 library(beepr)
 
-
 # Liger Round01 -----------------------------------------------------------
 marsh_post_liger <- read_rds("RDS_Objects/marsh_post_mortem_seuratV3_filtered_liger.RDS")
 
@@ -21,7 +20,6 @@ marsh_post_liger <- online_iNMF(marsh_post_liger, k = 40, lambda = 12, miniBatch
 marsh_post_liger <- quantile_norm(marsh_post_liger)
 marsh_post_liger <- clusterLouvainJaccard(marsh_post_liger,resolution = 0.8)
 marsh_post_liger <- runUMAP(marsh_post_liger)
-
 
 umap_dim <- plotByDatasetAndCluster(marsh_post_liger, return.plots = TRUE, do.legend = TRUE)
 umap_palette <- DiscretePalette(n = 36, palette = "polychrome")
@@ -71,7 +69,6 @@ marsh_post_mortem_annotation <- tibble::tribble(
   27L, "granulocyte",       "black",
   28L,     "doublet",        "gray"
 )
-
 
 # Pull cell type cluster IDs
 oligo_clu <- marsh_post_mortem_annotation %>% 

@@ -8,7 +8,6 @@ library(liger)
 
 install.packages("~/Desktop/Bioinformatics Tools/R Source Packages/Seurat_2.3.4.tar.gz", repos = NULL, type = "source")
 
-
 # Load Liger Object -------------------------------------------------------
 marsh_post_liger_cleaned <- read_rds("RDS_Objects/marsh_post_liger_round01_cleaned.RDS")
 
@@ -19,7 +18,6 @@ marsh_post_liger_cleaned <- online_iNMF(marsh_post_liger_cleaned, k = 35, lambda
 marsh_post_liger_cleaned <- quantile_norm(marsh_post_liger_cleaned, knn_k = 15)
 marsh_post_liger_cleaned <- clusterLouvainJaccard(marsh_post_liger_cleaned,resolution = 0.5)
 marsh_post_liger_cleaned <- runUMAP(marsh_post_liger_cleaned, n_neighbors = 15)
-
 
 umap_dim <- plotByDatasetAndCluster(marsh_post_liger_cleaned, return.plots = TRUE, do.legend = TRUE)
 umap_palette <- DiscretePalette(n = 36, palette = "polychrome")
@@ -70,7 +68,6 @@ marsh_post_mortem_round02_annotation <- tibble::tribble(
   21L,    "oligo",      "orange",
   22L,    "fibro", "darkorchid3"
 )
-
 
 # Recolor UMAP plot
 cluster_color_cleaned <- marsh_post_mortem_round02_annotation %>% 

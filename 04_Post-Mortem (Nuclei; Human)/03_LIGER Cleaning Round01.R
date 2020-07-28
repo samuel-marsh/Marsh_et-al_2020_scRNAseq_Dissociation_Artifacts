@@ -25,7 +25,6 @@ pdf("plots/cleaning/micro_sub_factors_NEW.pdf")
 plotFactors(liger_object = micro_sub, num.genes = 8, plot.tsne = T)
 dev.off()
 
-
 # Remove mito clustering factor to sep neurons better
 micro_sub <- quantile_norm(micro_sub, dims.use = setdiff(1:25, 3))
 micro_sub <- clusterLouvainJaccard(micro_sub,resolution = 2.5)
@@ -40,7 +39,6 @@ umap_dim <- umap_dim[[2]] +
   guides(col=guide_legend(title = '', override.aes = list(size = 4)))
 umap_dim
 
-
 beep(sound = 2)
 
 pdf("plots/cleaning/micro_sub_factors_NEW2.pdf")
@@ -51,10 +49,8 @@ plotGene_keep_scale(object = micro_sub, "CX3CR1", plot.by = "none")
 plotGene_keep_scale(object = micro_sub, "PTPRC", plot.by = "none", zero.color = "lightgray")
 plotGene_keep_scale(object = micro_sub, "SYT1", plot.by = "none")
 
-
 seurat_sub <- ligerToSeurat(object = micro_sub)
 clu7 <- prestowrapper(object = seurat_sub, ident.1 = 7)
-
 
 # Elim Doublets
 # ADD NOTES
@@ -65,7 +61,6 @@ doublet_micro <- doublet_micro %>%
   rownames_to_column(var = "barcodes") %>% 
   filter(cluster %in% micro_doubl) %>% 
   pull(barcodes)
-
 
 # Oligo ---------------------------------------------------------------
 oligo_sub <- subsetLiger(object = marsh_post_liger, clusters.use = oligo_clu, remove.missing = FALSE)
@@ -87,7 +82,6 @@ umap_dim <- umap_dim[[2]] +
 umap_dim
 
 beep(sound = 2)
-
 
 pdf("plots/cleaning/oligo_sub_factors.pdf")
 plotFactors(liger_object = oligo_sub, num.genes = 8, plot.tsne = T)
@@ -120,7 +114,6 @@ doublet_oligo <- doublet_oligo %>%
   rownames_to_column(var = "barcodes") %>% 
   filter(cluster %in% oligo_doubl) %>% 
   pull(barcodes)
-
 
 # Excit---------------------------------------------------------------
 excit_sub <- subsetLiger(object = marsh_post_liger, clusters.use = excit_clu, remove.missing = FALSE)
@@ -262,7 +255,6 @@ umap_dim <- umap_dim[[2]] +
   guides(col=guide_legend(title = '', override.aes = list(size = 4)))
 umap_dim
 
-
 pdf("plots/cleaning/opc_sub_factors.pdf")
 plotFactors(liger_object = opc_sub, num.genes = 8, plot.tsne = T)
 dev.off()
@@ -279,7 +271,6 @@ doublet_opc <- doublet_opc %>%
   rownames_to_column(var = "barcodes") %>% 
   filter(cluster %in% opc_doubl) %>% 
   pull(barcodes)
-
 
 # Endo ---------------------------------------------------------------
 endo_sub <- subsetLiger(object = marsh_post_liger, clusters.use = endo_clu, remove.missing = FALSE)
@@ -299,7 +290,6 @@ umap_dim <- umap_dim[[2]] +
   theme(legend.position = "right") +
   guides(col=guide_legend(title = '', override.aes = list(size = 4)))
 umap_dim
-
 
 pdf("plots/cleaning/endo_sub_factors.pdf")
 plotFactors(liger_object = endo_sub, num.genes = 8, plot.tsne = T)
@@ -336,7 +326,6 @@ umap_dim <- umap_dim[[2]] +
   theme(legend.position = "right") +
   guides(col=guide_legend(title = '', override.aes = list(size = 4)))
 umap_dim
-
 
 pdf("plots/cleaning/fibro_sub_factors.pdf")
 plotFactors(liger_object = fibro_sub, num.genes = 8, plot.tsne = T)
@@ -414,4 +403,3 @@ marsh_post_liger@cell.data$barcodes <- rownames(marsh_post_liger@cell.data)
 marsh_post_liger_cleaned <- subsetLiger(object = marsh_post_liger, cells.use = setdiff(unique(marsh_post_liger@cell.data$barcodes), doublets_complete), remove.missing = FALSE)
 
 write_rds(marsh_post_liger_cleaned, "RDS_Objects/marsh_post_liger_round01_cleaned.RDS")
-

@@ -17,7 +17,6 @@ umap_dim <- umap_dim[[2]] +
   guides(col=guide_legend(title = '', override.aes = list(size = 4)))
 umap_dim
 
-
 umap_dim[[1]] + 
   scale_color_manual(values = c("black", "NA", "NA")) +
   theme_classic() + 
@@ -338,7 +337,7 @@ doublet_rd2_new <- doublet_rd2_new %>%
 # Compile doublets into single vector
 doublets_complete2 <- c(doublet_astro2, doublet_endo2, doublet_inhib2, doublet_rd2_new, doublet_fibro2, doublet_immune2)
 
-# Barcodes already in cell.data from previous round
+# Barcodes already in cell.data slot from previous round
 
 # Remove doublet cells from Round02 object and save as cleaned2 object
 marsh_post_liger_cleaned2 <- subsetLiger(object = marsh_post_liger_cleaned, cells.use = setdiff(unique(marsh_post_liger_cleaned@cell.data$barcodes), doublets_complete2), remove.missing = FALSE)

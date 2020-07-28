@@ -29,7 +29,6 @@ pm_donorC_01_path <- "~/Desktop/Transfer_to_O2/exp39_human_nucseq/pEXP27sHSrCTXP
 
 pm_donorC_02_path <- "~/Desktop/Transfer_to_O2/exp39_human_nucseq/pEXP35sHSrCTXPMidonorCd20191001dapi2/filtered_feature_bc_matrix/"
 
-
 # Read libraries into R
 pmdonorA_01 <- Read10X(data.dir = pm_donorA_01_path, strip.suffix = FALSE)
 pmdonorA_02 <- Read10X(data.dir = pm_donorA_02_path, strip.suffix = FALSE)
