@@ -29,18 +29,24 @@ umap_dim
 
 beep(sound = 2)
 
-# Save Clustering
-ggsave("plots/Round02/marsh_post-mortem_full_liger_round02_UMAP.pdf")
+# remove clustering factor
+marsh_post_liger_cleaned2 <- quantile_norm(marsh_post_liger_cleaned2, dims.use = setdiff(1:20, 19))
+marsh_post_liger_cleaned2 <- clusterLouvainJaccard(marsh_post_liger_cleaned2,resolution = 0.2)
+marsh_post_liger_cleaned2 <- runUMAP(marsh_post_liger_cleaned2, n_neighbors = 45, min_dist = 0.2)
 
-# Plot Marker genes
-marker.genes <- c('OLIG1','CX3CR1','AQP4','TNR','THEMIS','SLC17A7','GAD2','CLDN5', "FLT1", "KCNJ8", "SLC6A12", "COL1A1", "COL1A2", "DCN", "KCNK17", "RBFOX3", "THY1", "SYT1", "RORB", "GAD1", "GAD2", "ADARB2", "LAMP5", "SST", "VIP", "AQP4", "FGFR3", "OPALIN", "COL18A1", "C1QA", "PTPRC")
+umap_dim <- plotByDatasetAndCluster(marsh_post_liger_cleaned2, return.plots = TRUE, do.legend = TRUE, text.size = 6)
+umap_palette <- DiscretePalette(n = 36, palette = "polychrome")
+umap_dim <- umap_dim[[2]] + 
+  scale_color_manual(values = umap_palette) +
+  theme_classic() + 
+  theme(legend.position = "right") +
+  guides(col=guide_legend(title = '', override.aes = list(size = 4)))
+umap_dim
 
-pdf("plots/Round02/marsh_post-mortem_liger_round02_marker-genes_NEW.pdf")
-lapply(marker.genes,function(x){print(plotGene_keep_scale(marsh_post_liger_cleaned, gene = x, plot.by = "none"))})
-dev.off()
+beep(sound = 2)
 
-# Annotate the clusters
-marsh_post_final_annotation <- tibble::tribble(
+# Annotate
+post_final_annotation <- tibble::tribble(
   ~cluster, ~cell_type,        ~color,
   0L,    "oligo",      "orange",
   1L,    "oligo",      "orange",
@@ -48,23 +54,19 @@ marsh_post_final_annotation <- tibble::tribble(
   3L,    "excit",  "dodgerblue",
   4L,    "excit",  "dodgerblue",
   5L,    "astro", "forestgreen",
-  6L,    "astro", "forestgreen",
-  7L,    "micro",        "gold",
+  6L,    "micro",        "gold",
+  7L,    "astro", "forestgreen",
   8L,    "inhib",        "navy",
-  9L,      "OPC", "darkorange2",
-  10L,    "inhib",        "navy",
-  11L,    "inhib",        "navy",
-  12L,     "endo",        "pink",
-  13L,    "oligo",      "orange",
-  14L,     "PBMC",        "gray",
-  15L,    "fibro", "darkorchid3"
+  9L,    "inhib",        "navy",
+  10L,      "OPC", "darkorange2",
+  11L,     "endo",        "orchid",
+  12L,     "PBMC",        "gray",
+  13L,    "fibro", "darkorchid3"
 )
 
-# Pull colors for plotting
-cluster_colors_final <- marsh_post_final_annotation %>% 
+cluster_colors_final <- post_final_annotation %>% 
   pull(color)
 
-# Recolor plot based on cell idents
 umap_dim <- plotByDatasetAndCluster(marsh_post_liger_cleaned2, return.plots = TRUE, do.legend = TRUE, text.size = 6)
 umap_dim <- umap_dim[[2]] + 
   scale_color_manual(values = cluster_colors_final) +
@@ -73,7 +75,12 @@ umap_dim <- umap_dim[[2]] +
   guides(col=guide_legend(title = '', override.aes = list(size = 4)))
 umap_dim
 
-ggsave("plots/Round03/marsh_post_mortem_cluster_colored_FINAL.pdf")
+# Plot Marker genes
+marker.genes <- c('OLIG1','CX3CR1','AQP4','TNR','THEMIS','SLC17A7','GAD2','CLDN5', "FLT1", "KCNJ8", "SLC6A12", "COL1A1", "COL1A2", "DCN", "KCNK17", "RBFOX3", "THY1", "SYT1", "RORB", "GAD1", "GAD2", "ADARB2", "LAMP5", "SST", "VIP", "AQP4", "FGFR3", "OPALIN", "COL18A1", "C1QA", "PTPRC")
+
+pdf("plots/Round02/marsh_post-mortem_liger_round02_marker-genes_NEW.pdf")
+lapply(marker.genes,function(x){print(plotGene_keep_scale(marsh_post_liger_cleaned2, gene = x, plot.by = "none"))})
+dev.off()
 
 # Convert to Seurat  ------------------------------------------------------
 # Object will be in V2 structure

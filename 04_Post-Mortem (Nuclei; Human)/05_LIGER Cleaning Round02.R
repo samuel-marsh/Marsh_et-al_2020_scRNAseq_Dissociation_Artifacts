@@ -252,14 +252,14 @@ doublet_endo2 <- doublet_endo2 %>%
   pull(barcodes)
 
 # Fibro ---------------------------------------------------------------
-fibro_sub2 <- subsetLiger(object = marsh_post_liger_cleaned, clusters.use = fibro_clu2, remove.missing = FALSE)
+fibro_sub2 <- subsetLiger(object = post_liger_cleaned, clusters.use = fibro_clu2, remove.missing = FALSE)
 fibro_sub2 <- normalize(fibro_sub2)
 fibro_sub2 <- selectGenes(fibro_sub2, do.plot = T, num.genes = 300)
 fibro_sub2 <- scaleNotCenter(fibro_sub2)
 #fibro_sub2 <- online_iNMF(fibro_sub2, k = 25, lambda = 5, miniBatch_size = 75)
-fibro_sub2 <- optimizeALS(fibro_sub, k = 5, lambda = 5, nrep = 1)
+fibro_sub2 <- optimizeALS(fibro_sub2, k = 5, lambda = 5, nrep = 1)
 fibro_sub2 <- quantile_norm(fibro_sub2)
-fibro_sub2 <- clusterLouvainJaccard(fibro_sub2,resolution = 2.5)
+fibro_sub2 <- clusterLouvainJaccard(fibro_sub2,resolution = 2)
 fibro_sub2 <- runUMAP(fibro_sub2)
 
 umap_dim <- plotByDatasetAndCluster(fibro_sub2, return.plots = TRUE, do.legend = TRUE, text.size = 6)
@@ -280,7 +280,7 @@ plotGene_keep_scale(object = fibro_sub2, "FLT1", plot.by = "none")
 plotGene_keep_scale(object = fibro_sub2, "ST18", plot.by = "none")
 
 # Elim Doublets
-fibro_doubl2 <- c("1", "3", "4", "7", "10", "9")
+fibro_doubl2 <- c("0")
 doublet_fibro2 <- data.frame(fibro_sub2@clusters, stringsAsFactors = FALSE)
 names(doublet_fibro2)[1] <- "cluster"
 doublet_fibro2 <- doublet_fibro2 %>% 
@@ -289,13 +289,13 @@ doublet_fibro2 <- doublet_fibro2 %>%
   pull(barcodes)
 
 # Immune Peripheral ---------------------------------------------------------------
-immune_sub2 <- subsetLiger(object = marsh_post_liger_cleaned, clusters.use = immune_clu2, remove.missing = FALSE)
+immune_sub2 <- subsetLiger(object = post_liger_cleaned, clusters.use = immune_clu2, remove.missing = FALSE)
 immune_sub2 <- normalize(immune_sub2)
 immune_sub2 <- selectGenes(immune_sub2, do.plot = T, num.genes = 200)
 immune_sub2 <- scaleNotCenter(immune_sub2)
 #immune_sub2 <- online_iNMF(immune_sub2, k = 25, lambda = 5, miniBatch_size = 25)
-immune_sub2 <- optimizeALS(immune_sub, k = 10, lambda = 5, nrep = 1)
-immune_sub2 <- quantile_norm(immune_sub2)
+immune_sub2 <- optimizeALS(immune_sub2, k = 10, lambda = 5, nrep = 1) #same error as fibro cluster original
+immune_sub2 <- quantile_norm(immune_sub2, knn_k = 10) 
 immune_sub2 <- clusterLouvainJaccard(immune_sub2,resolution = 2)
 immune_sub2 <- runUMAP(immune_sub2)
 
@@ -318,7 +318,7 @@ plotGene_keep_scale(object = immune_sub2, "CD3E", plot.by = "none")
 plotGene_keep_scale(object = immune_sub2, "CX3CR1", plot.by = "none")
 
 # Elim Doublets
-immune_doubl2 <- c("5", "1", "2", "3", "6")
+immune_doubl2 <- c("0")
 doublet_immune2 <- data.frame(immune_sub2@clusters, stringsAsFactors = FALSE)
 names(doublet_immune2)[1] <- "cluster"
 doublet_immune2 <- doublet_immune2 %>% 
