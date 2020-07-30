@@ -14,8 +14,6 @@ library(scCustomize)
 install.packages("~/Desktop/Bioinformatics Tools/R Source Packages/Seurat_3.1.5.tar.gz", repos = NULL, type = "source")
 install.packages("~/Desktop/Bioinformatics Tools/R Source Packages/Seurat_2.3.4.tar.gz", repos = NULL, type = "source")
 
-
-
 # Load Data ---------------------------------------------------------------
 # Read in full meta data table
 snTrem2_meta <- read.csv("Zhou_snTrem2/snTrem2_Meta_Data.csv", stringsAsFactors = FALSE, header = 1)
@@ -129,8 +127,6 @@ snTrem2_ctrlAD_seurat50 <- subset(x = snTrem2_ctrlAD_seurat50, idents = "C4", in
 snTrem2_ctrlAD_liger50 <- seuratToLiger(objects = snTrem2_ctrlAD_seurat50, combined.seurat = TRUE, meta.var = "orig.ident")
 write_rds(snTrem2_ctrlAD_liger50, "RDS_Objects/RAW_liger/snTrem2_ctrl_liger50_RAW.RDS")
 
-
-
 # Restart R session and Install Seurat v2.3.4 -----------------------------
 install.packages("~/Desktop/Bioinformatics Tools/R Source Packages/Seurat_2.3.4.tar.gz", repos = NULL, type = "source")
 
@@ -141,9 +137,6 @@ library(marsh.utils)
 library(viridis)
 library(liger)
 library(beepr)
-
-
-
 
 # LIGER Round01 -----------------------------------------------------------
 ctrl_AD_comb <- read_rds("RDS_Objects/RAW_liger/snTrem2_ctrl_liger50_RAW.RDS")
@@ -177,8 +170,6 @@ dev.off()
 pdf("plots/Round01_Factors/snTrem2_ctrlAD_liger_round01_factors.pdf")
 plotFactors(liger_object = ctrl_AD_comb, num.genes = 8, plot.tsne = T)
 dev.off()
-
-
 
 # Cleaning Round01 --------------------------------------------------------
 # Annotate
@@ -509,8 +500,6 @@ ctrl_AD_comb@cell.data$barcodes <- rownames(ctrl_AD_comb@cell.data)
 # Remove doublet cells
 ctrl_AD_comb_cleaned <- subsetLiger(object = ctrl_AD_comb, cells.use = setdiff(unique(ctrl_AD_comb@cell.data$barcodes), doublets_complete))
 
-
-
 # LIGER Round02 -----------------------------------------------------------
 # Reanalyze and Cluster
 ctrl_AD_comb_cleaned <-  normalize(ctrl_AD_comb_cleaned)
@@ -546,7 +535,6 @@ doublets_full_clu14_neuron <- doublets_full_clu14_neuron %>%
   pull(barcodes)
 
 ctrl_AD_comb_cleaned2 <- subsetLiger(object = ctrl_AD_comb_cleaned, cells.use = setdiff(unique(ctrl_AD_comb_cleaned@cell.data$barcodes), doublets_full_clu14_neuron))
-
 
 # LIGER Round03 -----------------------------------------------------------
 ctrl_AD_comb_cleaned2 <-  normalize(ctrl_AD_comb_cleaned2)
@@ -601,7 +589,6 @@ umap_dim <- umap_dim[[2]] +
   theme(legend.position = "right") +
   guides(col=guide_legend(title = '', override.aes = list(size = 4)))
 umap_dim
-
 
 ctrl_AD_comb_cleaned2_seurat <- ligerToSeurat(ctrl_AD_comb_cleaned2)
 write_rds(ctrl_AD_comb_cleaned2_seurat, "zhou_ctrl_AD_seuratv2_temp.RDS")
