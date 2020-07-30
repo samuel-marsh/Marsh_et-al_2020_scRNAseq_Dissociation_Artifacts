@@ -1,5 +1,5 @@
 # Start with Seurat v3.1.5
-#  Analysis performed with RXXXXXX
+# Analysis performed with R3.5.3
 
 # Load Packages -----------------------------------------------------------
 library(tidyverse)
