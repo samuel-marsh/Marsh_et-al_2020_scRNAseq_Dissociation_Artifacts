@@ -73,7 +73,7 @@ Reanalyzed data from literature is summarized detailed in table below.
 <sup><sup>a</sup>FPKM data and access to raw fastq files via GEO.  Raw count matrix was obtained via personal communication with authors.</sup>  
 <sup><sup>b</sup>Additional metadata obtained via personal communication with the authors</sup>     
 <sup><sup>c</sup>Data on synapse are post-QC and were used for re-analysis.  GEO records contain the all barcodes (unfiltered) HDF5 cellranger output files and fastqs.</sup>  
-<sup><sup>i</sup>Reanalysis of Morabito et al., was also used for calculation of cell type proportions in [Liddelow, Marsh, & Stevens et al., 2020 (Trends in Immunology)](link)</sup>
+<sup><sup>i</sup>Reanalysis of Morabito et al., was also used for calculation of cell type proportions in [Liddelow, Marsh, & Stevens et al., 2020 (Trends in Immunology)](https://www.cell.com/trends/immunology/fulltext/S1471-4906(20)30155-1)</sup>
 
 #### Human Data Reanalysis Meta Data
 Meta data for human data was assembled from published SI Tables, public data on synapse, or restricted access data on synapse
