@@ -13,7 +13,7 @@ Included is the code necessary to replicate the Seurat or LIGER (or both) object
     - Some analyses were performed across multiple versions of Seurat (V2 > V3).  In this scenario objects were updated to V3 using `UpdateSeuratObject`
     - Scripts specify point of upgrade to V3 in regard to analysis or object modification.
     - Seurat V2.3.4 source package can be downloaded here from [CRAN Archive](https://cran.r-project.org/src/contrib/Archive/Seurat/) and installed from local source.
-    - Seurat V3.2.0 was released near the end of analysis.  To maintain consistency Seurat V3.1.5 was downloaded from [CRAN Archive](https://cran.r-project.org/src/contrib/Archive/Seurat/) and installed from local source when switching between V2 and V3 was necessary.  
+    - Seurat V3.2+ was released near the end of analysis.  To maintain consistency Seurat V3.1.5 was downloaded from [CRAN Archive](https://cran.r-project.org/src/contrib/Archive/Seurat/) and installed from local source when switching between V2 and V3 was necessary.  
 
 - Where possible date of analysis performed prior to is specified.  To replicate analyses performed on specific date the following actions are recommended or described in code:
   - Use of contained environment using [packrat](https://cran.r-project.org/web/packages/packrat/index.html) or [renv](https://cran.r-project.org/web/packages/renv/index.html) packages. Followed by date-specific version installation of CRAN packages using [versions](https://cran.r-project.org/web/packages/versions/index.html) package.
@@ -27,7 +27,7 @@ Included is the code necessary to replicate the Seurat or LIGER (or both) object
 
 ## Data  
 ### Original Data
-The data in this project can be broadly divided into 2 categories (5 sub-projects).  Please see [SI Table 1](LINK) for breakdown by sample and more information.
+The data in this project can be broadly divided into 2 categories (5 sub-projects).  Please see [SI Table 1](LINK) (Mouse; Experiments 1-3) and [SI Table 2](LINK) (Human; Experiments 4-5) for breakdown by sample and more information.
 
 ***For experiments 1-4***, all the raw data (fastqs) and expression matrices are available at the NCBI Gene Expression Omnibus (GEO) under [GSE152184](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE152184).   
 
@@ -79,7 +79,6 @@ Reanalyzed data from literature is summarized detailed in table below.
 Meta data for human data was assembled from published SI Tables, public data on synapse, or restricted access data on synapse
   - Compiled publicly available meta data variables for each human dataset can be found in [SI Table 2](LINK).
   - "DUC" in the table indicates data available from synapse following submission and approval of Data Use Certificate.
-
 
 ### Acknowledgements:
 The analysis and results published here from Zhou et al., 2020 in whole or in part are based on data obtained from the [AMP-AD Knowledge Portal](https://adknowledgeportal.synapse.org/). Samples for this study were provided by the Rush Alzheimer’s Disease Center, Rush University Medical Center, Chicago. Data collection was supported through funding by NIA grants P30AG10161, R01AG15819, R01AG17917, R01AG30146, R01AG36836, U01AG32984, U01AG46152, the Illinois Department of Public Health, and the Translational Genomics Research Institute. Specific datasets for which additional analyses were performed are available from the Synapse database through links provided in table above.  Additional ROSMAP data can be requested at [https://www.radc.rush.edu](https://www.radc.rush.edu).
