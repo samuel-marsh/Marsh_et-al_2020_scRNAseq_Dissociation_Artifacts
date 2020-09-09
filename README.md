@@ -49,8 +49,8 @@ The data in this project can be broadly divided into 2 categories (5 sub-project
 All processed data files from Cell Ranger `count` outputs are available via NCBI GEO.  Information on Cell Ranger version and Genome/Annotation version can be found in each GEO record.
 There are 3 processed data files per library:
   1. GSM\*\_*Sample-Name*_barcodes.tsv.gz: corresponds to the cell barcodes (i.e. column names).
-  2. GSM\*\_Sample_Name_features.tsv.gz: corresponds to the gene identifiers (i.e. row names).
-  3. GSM\*\_Sample_Name_matrix.mtx.gz: expression matrix in sparse format.
+  2. GSM\*\_*Sample-Name*_features.tsv.gz: corresponds to the gene identifiers (i.e. row names).
+  3. GSM\*\_*Sample-Name*_matrix.mtx.gz: expression matrix in sparse format.
 
 ### Raw fastq Files
 All raw data fastq files can be downloaded from SRA linked from NCBI GEO records or from EGA.
