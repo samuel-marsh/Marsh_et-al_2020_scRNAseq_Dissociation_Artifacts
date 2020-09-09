@@ -29,7 +29,7 @@ Included is the code necessary to replicate the Seurat or LIGER (or both) object
 ### Original Data
 The data in this project can be broadly divided into 2 categories (5 sub-projects).  Please see [SI Table 1](LINK) (Mouse; Experiments 1-3) and [SI Table 2](LINK) (Human; Experiments 4-5) for breakdown by sample and more information.
 
-***For experiments 1-4***, all the raw data (fastqs) and expression matrices are available at the NCBI Gene Expression Omnibus (GEO) under [GSE152184](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE152184).   
+***For experiments 1-4***, all the raw data (fastqs) and expression matrices are available at the NCBI Gene Expression Omnibus (GEO) under SuperSeries [GSE152184](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE152184).   
 
 ***For experiment 5***, the raw data (fastqs) and expression matrices are available through the European phenome-Genome Archive (EGA) (Accession ID: [EGADXXXXXXX](EGADXXXXXXX))
 
