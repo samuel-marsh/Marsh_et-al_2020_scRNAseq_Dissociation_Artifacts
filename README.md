@@ -5,7 +5,7 @@ Samuel E. Marsh<sup>1,\* </sup>, Tushar Kamath<sup>1</sup>, Timothy R. Hammond<s
 
 <sup><sup>1</sup>Performed analysis</sup>   
 <sup><sup>2</sup>Assisted analysis</sup>  
-<sup><sup>\*</sup>Analysis lead</sup>  
+<sup><sup>\*</sup>Analysis lead (Contact: samuel.marsh@childrens.harvard.edu)</sup>  
 
 ## Code
 Included is the code necessary to replicate the Seurat or LIGER (or both) objects used for analysis and plotting.
@@ -70,7 +70,7 @@ Reanalyzed data from literature is summarized detailed in table below.
 | Leng & Li<sup>b</sup> | Human | snRNAseq (10X 3' V2) | [syn21788402](https://www.synapse.org/#!Synapse:syn21788402/wiki/601825)<sup>c</sup> <br> & [GSE147528](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE147528) | [Leng & Li et al., 2020 <br> (biorxiv)](https://www.biorxiv.org/content/10.1101/2020.04.04.025825v2) |
 | Dataset | Species | Seq | [Data](link) | [Publication](link) |
 
-<sup><sup>a</sup>FPKM data and access to raw fastq files via GEO.  Raw count matrix was obtained via personal communication with authors.</sup>  
+<sup><sup>a</sup>FPKM data and raw fastq files are available via GEO.  Raw count matrix was obtained via personal communication with authors.</sup>  
 <sup><sup>b</sup>Additional metadata obtained via personal communication with the authors</sup>     
 <sup><sup>c</sup>Data on synapse are post-QC and were used for re-analysis.  GEO records contain the all barcodes (unfiltered) HDF5 cellranger output files and fastqs.</sup>  
 <sup><sup>i</sup>Reanalysis of Morabito et al., was also used for calculation of cell type proportions in [Liddelow, Marsh, & Stevens et al., 2020 (Trends in Immunology)](https://www.cell.com/trends/immunology/fulltext/S1471-4906(20)30155-1)</sup>
@@ -81,6 +81,8 @@ Meta data for human data was assembled from published SI Tables, public data on 
   - "DUC" in the table indicates data available from synapse following submission and approval of Data Use Certificate.
 
 ### Acknowledgements:
+This study was supported by funding from Cure Alzheimer's Fund (B.S.).  Special thanks to authors Tushar Kamath, Tim Hammond, Alec Walker, Lasse-Dissing-Olesen, Velina Kozareva, Evan Macosko, as well other members of Stevens and Macosko labs for helpful discussions during the analysis of this project.  
+
 The analysis and results published here from Zhou et al., 2020 in whole or in part are based on data obtained from the [AMP-AD Knowledge Portal](https://adknowledgeportal.synapse.org/). Samples for this study were provided by the Rush Alzheimer’s Disease Center, Rush University Medical Center, Chicago. Data collection was supported through funding by NIA grants P30AG10161, R01AG15819, R01AG17917, R01AG30146, R01AG36836, U01AG32984, U01AG46152, the Illinois Department of Public Health, and the Translational Genomics Research Institute. Specific datasets for which additional analyses were performed are available from the Synapse database through links provided in table above.  Additional ROSMAP data can be requested at [https://www.radc.rush.edu](https://www.radc.rush.edu).
 
 The analysis and results published here for Morabito et al., 2019 are based on reanalysis of study data that were provided by Dr. Vivek Swarup, Institute for Memory Impairments and Neurological Disorders, University of California, Irvine.  Data collection was supported through funding UCI Startup funds and American Federation of Aging Research.  Raw data used in analysis here are available from the Synapse database through link provided in table above.
