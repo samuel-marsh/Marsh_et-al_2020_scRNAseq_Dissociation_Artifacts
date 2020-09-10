@@ -5,7 +5,7 @@ Samuel E. Marsh<sup>1,\* </sup>, Tushar Kamath<sup>1</sup>, Timothy R. Hammond<s
 
 <sup><sup>1</sup>Performed analysis</sup>   
 <sup><sup>2</sup>Assisted analysis</sup>  
-<sup><sup>\*</sup>Analysis lead (Contact: samuel.marsh@childrens.harvard.edu)</sup>  
+<sup><sup>\*</sup>Analysis lead (contact: samuel.marsh@childrens.harvard.edu)</sup>  
 
 ## Code
 Included is the code necessary to replicate the Seurat or LIGER (or both) objects used for analysis and plotting.
