@@ -5,6 +5,13 @@ beep(sound = 2)
 # Extract gene name list for mizrak dataset 1
 gene_list1 <- rownames(raw_data1)
 
+# 2 more genes expressed in dataset 1 than dataset 2.  Pull gene list from dataset one to create mito and score gene list conversions to ensembl IDs
+gene_labels_mizrak <- raw_data1 %>% 
+  rownames_to_column(var = "ensembl_ID") %>% 
+  as_tibble() %>% 
+  rename(gene_name = CRERECOMB.1) %>% 
+  select(ensembl_ID ,gene_name)
+
 raw_data1 <- raw_data1 %>% 
   select(-CRERECOMB.1)
 
@@ -27,13 +34,6 @@ raw_data2 <- raw_data2 %>%
 mizrak2 <- CreateSeuratObject(counts = raw_data2, project = "mizrak_reanalysis1", min.cells = 3, min.features = 200)
 
 mizrak2 <- RenameCells(mizrak2, add.cell.id = "B")
-
-# 2 more genes expressed in dataset 1 than dataset 2.  Pull gene list from dataset one to create mito and score gene list conversions to ensembl IDs
-gene_labels_mizrak <- raw_data1 %>% 
-  rownames_to_column(var = "ensembl_ID") %>% 
-  as_tibble() %>% 
-  rename(gene_name = CRERECOMB.1) %>% 
-  select(ensembl_ID ,gene_name)
 
 # Identify Ensembl IDs for mito genes for adding mito percent
 mito <- gene_labels_mizrak %>% 
