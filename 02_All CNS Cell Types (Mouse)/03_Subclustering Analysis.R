@@ -52,7 +52,7 @@ myeloid <- FindClusters(myeloid, resolution = 0.2)
 myeloid <- RunTSNE(myeloid, dims = 1:15)
 
 DimPlot(myeloid, label = TRUE, reduction = "tsne")
-p_myeloid <- DimPlot(myeloid, label = FALSE, reduction = "tsne", group.by = "Treatment", cols = c("orange", "navy"))
+p_myeloid <- DimPlot(myeloid, label = FALSE, reduction = "tsne", group.by = "Treatment", cols = c("navy", "orange"), pt.size = 4, shuffle = TRUE)
 p_myeloid
 
 # Astro Subclustering ---------------------------------------------------
@@ -72,7 +72,7 @@ astro <- FindClusters(astro, resolution = 0.2)
 astro <- RunTSNE(astro, dims = 1:7)
 
 DimPlot(astro, label = TRUE, reduction = "tsne")
-p_astro <- DimPlot(astro, label = FALSE, reduction = "tsne", group.by = "Treatment", cols = c("orange", "navy"))
+p_astro <- DimPlot(astro, label = FALSE, reduction = "tsne", group.by = "Treatment", cols = c("navy", "orange"), pt.size = 4, shuffle = TRUE)
 p_astro
 
 # Endo Subclustering ---------------------------------------------------
@@ -92,7 +92,7 @@ endo <- FindClusters(endo, resolution = 0.2)
 endo <- RunTSNE(endo, dims = 1:8)
 
 DimPlot(endo, label = TRUE, reduction = "tsne")
-p_endo <- DimPlot(endo, label = FALSE, reduction = "tsne", group.by = "Treatment", cols = c("orange", "navy"))
+p_endo <- DimPlot(endo, label = FALSE, reduction = "tsne", group.by = "Treatment", cols = c("navy", "orange"), pt.size = 4, shuffle = TRUE)
 p_endo
 
 # Oligo Subclustering ---------------------------------------------------
@@ -112,7 +112,7 @@ oligo <- FindClusters(oligo, resolution = 0.6)
 oligo <- RunTSNE(oligo, dims = 1:13)
 
 DimPlot(oligo, label = TRUE, reduction = "tsne")
-p_oligo <- DimPlot(oligo, label = FALSE, reduction = "tsne", group.by = "Treatment", cols = c("orange", "navy"))
+p_oligo <- DimPlot(oligo, label = FALSE, reduction = "tsne", group.by = "Treatment", cols = c("navy", "orange"), pt.size = 4, shuffle = TRUE)
 p_oligo
 
 # Epi Subclustering ---------------------------------------------------
@@ -132,7 +132,7 @@ epi <- FindClusters(epi, resolution = 0.4)
 epi <- RunTSNE(epi, dims = 1:3)
 
 DimPlot(epi, label = TRUE, reduction = "tsne")
-p_epi <- DimPlot(epi, label = FALSE, reduction = "tsne", group.by = "Treatment", cols = c("orange", "navy"))
+p_epi <- DimPlot(epi, label = FALSE, reduction = "tsne", group.by = "Treatment", cols = c("navy", "orange"), pt.size = 4, shuffle = TRUE)
 p_epi
 
 # Neuron Subclustering ---------------------------------------------------
@@ -152,7 +152,7 @@ neuron <- FindClusters(neuron, resolution = 0.4)
 neuron <- RunTSNE(neuron, dims = 1:3)
 
 DimPlot(neuron, label = TRUE, reduction = "tsne")
-p_neuron <- DimPlot(neuron, label = FALSE, reduction = "tsne", group.by = "Treatment", cols = c("orange", "navy"))
+p_neuron <- DimPlot(neuron, label = FALSE, reduction = "tsne", group.by = "Treatment", cols = c("navy", "orange"), pt.size = 4, shuffle = TRUE)
 p_neuron
 
 # Finalized ---------------------------------------------------------------
