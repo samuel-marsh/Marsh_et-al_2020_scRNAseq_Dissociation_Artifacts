@@ -42,7 +42,7 @@ The data in this project can be broadly divided into 2 categories (5 sub-project
 **snRNAseq of nuclei isolated from frozen human brain tissue**
 
   4. snRNAseq of post-mortem brain tissue | 10X 3' V3.0 | 3 samples | ([GSE157760](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE157760))  
-  5. snRNAseq of surgically resected brain tissue with or without freezing time delay | 10X 3' V3.0 | 4 samples (n= 2; x2 timepoints per sample) | ([EGAXXXXXXX](EGAXXXXXXX))
+  5. snRNAseq of surgically resected brain tissue with or without freezing time delay | 10X 3' V3.0 | <br> 4 samples (n= 2; x2 timepoints per sample) | ([EGAXXXXXXX](EGAXXXXXXX))
 
 ### Processed Data
 **Experiments 1-4**  
