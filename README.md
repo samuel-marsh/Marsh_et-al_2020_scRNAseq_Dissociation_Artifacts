@@ -21,9 +21,9 @@ Included is the code necessary to replicate the Seurat or LIGER (or both) object
 
 - LIGER analyses were performed using the in development ["online"](https://github.com/MacoskoLab/liger/tree/online) branch, updating throughout analysis to accommodate bug fixes.  
   - LIGER analyses also utilize multiple versions of Seurat as specified in code for some of the following situations:
-    - Seurat V3 used used for data import, QC filtering (genes, UMIs, % mito), and final plotting due to more advanced plotting features and patchwork compatibility
-    - Seurat V2 was used during LIGER workflow to accommodate use of now deprecated [`clusterLouvainJaccard` function](https://github.com/samuel-marsh/Marsh_et-al_2020_scRNAseq_Dissociation_Artifacts/tree/master/08_Misc) which relied on Seurat V2 object structure
-    - Conversion between Seurat and LIGER objects was performed using built in LIGER functions `seuratToLiger` and `ligerToSeurat`
+    - Seurat V3 used used for data import, QC filtering (genes, UMIs, % mito), and majority of plotting.
+    - Seurat V2 was used during LIGER analysis workflow to accommodate use of now deprecated [`clusterLouvainJaccard` function](https://github.com/samuel-marsh/Marsh_et-al_2020_scRNAseq_Dissociation_Artifacts/tree/master/08_Misc) which relied on Seurat V2 object structure.
+    - Conversion between Seurat and LIGER objects was performed using built in LIGER functions `seuratToLiger` and `ligerToSeurat`.
 
 ## Data  
 ### Original Data
@@ -46,7 +46,7 @@ The data in this project can be broadly divided into 2 categories (5 sub-project
 
 ### Processed Data
 **Experiments 1-4**  
-All processed data files from Cell Ranger `count` outputs are available via NCBI GEO.  Information on Cell Ranger version and Genome/Annotation version can be found in each GEO record.
+All processed data files from Cell Ranger `count` outputs are available via NCBI GEO.  Information on Cell Ranger version and Genome/Annotation for each experiment can be found in each GEO record and [SI Table 1](LINK) or [2](LINK).  
 There are 3 processed data files per library:
   1. GSM\*\_*Sample-Name*_barcodes.tsv.gz: corresponds to the cell barcodes (i.e. column names).
   2. GSM\*\_*Sample-Name*_features.tsv.gz: corresponds to the gene identifiers (i.e. row names).
@@ -68,7 +68,6 @@ Reanalyzed data from literature is summarized detailed in table below.
 | Zhou | Human | snRNAseq (10X 5' V1) | [syn21670836](https://adknowledgeportal.synapse.org/Explore/Studies/DetailsPage?Study=syn21670836) | [Zhou et al., 2020 <br> (Nature Medicine)](https://www.nature.com/articles/s41591-019-0695-9?) |
 | Morabito<sup>i</sup> | Human | snRNAseq (10X 3' V3.0) | [syn18915937](https://www.synapse.org/#!Synapse:syn18915937/wiki/592740) | [Morabito et al., 2019 <br> (biorxiv)](https://www.biorxiv.org/content/10.1101/695221v1) |
 | Leng & Li<sup>b</sup> | Human | snRNAseq (10X 3' V2) | [syn21788402](https://www.synapse.org/#!Synapse:syn21788402/wiki/601825)<sup>c</sup> <br> & [GSE147528](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE147528) | [Leng & Li et al., 2020 <br> (biorxiv)](https://www.biorxiv.org/content/10.1101/2020.04.04.025825v2) |
-| Dataset | Species | Seq | [Data](link) | [Publication](link) |
 
 <sup><sup>a</sup>FPKM data and raw fastq files are available via GEO.  Raw count matrix was obtained via personal communication with authors.</sup>  
 <sup><sup>b</sup>Additional metadata obtained via personal communication with the authors</sup>     
@@ -81,7 +80,7 @@ Meta data for human data was assembled from published SI Tables, public data on 
   - "DUC" in the table indicates data available from synapse following submission and approval of Data Use Certificate.
 
 ### Acknowledgements:
-This study was supported by funding from Cure Alzheimer's Fund (B.S.).  Special thanks to authors Tushar Kamath, Tim Hammond, Alec Walker, Lasse-Dissing-Olesen, Velina Kozareva, Evan Macosko, as well other members of Stevens and Macosko labs for helpful discussions during the analysis of this project.  
+This study was supported by funding from Cure Alzheimer's Fund (B.S.).  Special thanks to authors Tushar Kamath, Tim Hammond, Alec Walker, Lasse-Dissing-Olesen, Velina Kozareva, Evan Macosko, as well other members of Stevens and Macosko labs for helpful discussions and assistance during the analysis of this project.  
 
 The analysis and results published here from Zhou et al., 2020 in whole or in part are based on data obtained from the [AMP-AD Knowledge Portal](https://adknowledgeportal.synapse.org/). Samples for this study were provided by the Rush Alzheimer’s Disease Center, Rush University Medical Center, Chicago. Data collection was supported through funding by NIA grants P30AG10161, R01AG15819, R01AG17917, R01AG30146, R01AG36836, U01AG32984, U01AG46152, the Illinois Department of Public Health, and the Translational Genomics Research Institute. Specific datasets for which additional analyses were performed are available from the Synapse database through links provided in table above.  Additional ROSMAP data can be requested at [https://www.radc.rush.edu](https://www.radc.rush.edu).
 
