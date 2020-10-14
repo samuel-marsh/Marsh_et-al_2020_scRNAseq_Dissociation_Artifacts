@@ -7,7 +7,6 @@ library(viridis)
 library(liger)
 library(beepr)
 
-
 # Load excitglia subclustered -------------------------------------------
 marsh_seurat3_excit <- read_rds("RDS_SeuratV3/cell_type_subset/marsh_excit_seurat.RDS")
 zhou_seurat3_excit <- read_rds("RDS_SeuratV3/cell_type_subset/zhou_excit_seurat.RDS")
