@@ -10,8 +10,8 @@ library(scCustomize)
 
 # Convert to Seurat Objects -------------------------------------------------------
 # read liger objects
-mg_fresh <- read_rds("~/Desktop/exp17_Dissociation Paper/Tushar/Fresh Tissue/smarsh_mgs/MG/mg_annot.rds")
-astro_fresh <- read_rds("~/Desktop/exp17_Dissociation Paper/Tushar/Fresh Tissue/smarsh_mgs/astros/astro_annot.rds")
+mg_fresh <- read_rds("~/Desktop/exp17_Dissociation Paper/Tushar/Fresh Tissue/smarsh_mgs/MG/a.mgcleaned.rds")
+astro_fresh <- read_rds("~/Desktop/exp17_Dissociation Paper/Tushar/Fresh Tissue/smarsh_mgs/astros/a.astrocleaned.rds")
 
 # Microglia convert and metadata
 mg_status <- mg_fresh@cell.data$status
