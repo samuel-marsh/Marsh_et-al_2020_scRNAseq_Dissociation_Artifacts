@@ -73,7 +73,7 @@ Reanalyzed data from literature is summarized detailed in table below.
 <sup><sup>b</sup>Data on synapse are post-QC and were used for re-analysis.  GEO records contain the all barcodes (unfiltered) HDF5 cellranger output files and fastqs.</sup>  
 <sup><sup>i</sup>Reanalysis of Morabito et al., was also used for calculation of cell type proportions in [Liddelow, Marsh, & Stevens et al., 2020 (Trends in Immunology)](https://www.cell.com/trends/immunology/fulltext/S1471-4906(20)30155-1)</sup>
 
-#### Human Data Reanalysis Meta Data
+### Human Data Reanalysis Meta Data
 Meta data for human data was assembled from published SI Tables, public data on synapse, or restricted access data on synapse
   - Compiled publicly available meta data variables for each human dataset can be found in [SI Table 2](LINK).
   - "DUC" in the table indicates data available from synapse following submission and approval of Data Use Certificate.
