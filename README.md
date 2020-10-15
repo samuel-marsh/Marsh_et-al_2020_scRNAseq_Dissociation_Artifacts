@@ -1,6 +1,6 @@
 # Marsh_et-al_2020_scRNAseq_Dissociation_Artifacts  
 #### Code to reproduce analysis objects for the data contained in:  
-[**Tissue Processing and Enzymatic Dissociation Induce Artifactual Gene Expression in Brain Cell Populations of Mice and Humans**](CITATION)  
+[**Single Cell Sequencing Reveals Brain Cell Type Specific Responses to Tissue Processing & Enzymatic Dissociation in Mice and Humans**](CITATION)  
 Samuel E. Marsh<sup>1,\* </sup>, Tushar Kamath<sup>1</sup>, Alec J. Walker, Lasse Dissing-Olesen, Timothy R. Hammond<sup>2</sup>,  Adam M.H. Young, Abdul Abdul, Naeem Nadaf, Connor Dufort, Sarah Murphy, Velina Kozareva<sup>2</sup>, Charles Vanderburg, Soyon Hong, Harry Bulstrode, Peter J. Hutchinson, Robin J.M. Franklin, Evan Macosko, & Beth Stevens
 
 <sup><sup>1</sup>Performed analysis</sup>   
@@ -81,6 +81,7 @@ Meta data for human data was assembled from published SI Tables, public data on 
 ### Acknowledgements:
 This study was supported by funding from Cure Alzheimer's Fund (B.S.).  Special thanks to authors Tushar Kamath, Tim Hammond, Alec Walker, Lasse-Dissing-Olesen, Velina Kozareva, Evan Macosko, as well other members of Stevens and Macosko labs for helpful discussions and assistance during the analysis of this project.  
 
+**Data Acknowledgements:**  
 The analysis and results published here from Zhou et al., 2020 in whole or in part are based on data obtained from the [AMP-AD Knowledge Portal](https://adknowledgeportal.synapse.org/). Samples for this study were provided by the Rush Alzheimer’s Disease Center, Rush University Medical Center, Chicago. Data collection was supported through funding by NIA grants P30AG10161, R01AG15819, R01AG17917, R01AG30146, R01AG36836, U01AG32984, U01AG46152, the Illinois Department of Public Health, and the Translational Genomics Research Institute. Raw data used in analysis here are available from AMP-AD/Synapse database through links provided in table above.  Additional ROSMAP data can be requested at [https://www.radc.rush.edu](https://www.radc.rush.edu).
 
 The analysis and results published here for Morabito et al., 2019 are based on reanalysis of study data downloaded from Synapse as provided by Dr. Vivek Swarup, Institute for Memory Impairments and Neurological Disorders, University of California, Irvine.  Data collection was supported through funding UCI Startup funds and American Federation of Aging Research.  Raw data used in analysis here are available from the Synapse database through link provided in table above.
