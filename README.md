@@ -78,7 +78,7 @@ Meta data for human data was assembled from published SI Tables, public data on 
   - Compiled publicly available meta data variables for each human dataset can be found in [SI Table 2](LINK).
   - "DUC" in the table indicates data available from synapse following submission and approval of Data Use Certificate.
 
-### Acknowledgements:
+## Acknowledgements:
 This study was supported by funding from Cure Alzheimer's Fund (B.S.).  Special thanks to authors Tushar Kamath, Tim Hammond, Alec Walker, Lasse-Dissing-Olesen, Velina Kozareva, Evan Macosko, as well other members of Stevens and Macosko labs for helpful discussions and assistance during the analysis of this project.  
 
 **Data Acknowledgements:**  
