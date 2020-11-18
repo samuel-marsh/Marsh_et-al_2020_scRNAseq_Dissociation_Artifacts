@@ -1,7 +1,7 @@
 # Marsh_et-al_2020_scRNAseq_Dissociation_Artifacts  
 #### Code to reproduce analysis objects for the data contained in:  
-[**Single Cell Sequencing Reveals Brain Cell Type Specific Responses to Tissue Processing & Enzymatic Dissociation in Mice and Humans**](CITATION)  
-Samuel E. Marsh<sup>1,\* </sup>, Tushar Kamath<sup>1</sup>, Alec J. Walker, Lasse Dissing-Olesen, Timothy R. Hammond<sup>2</sup>,  Adam M.H. Young, Abdul Abdul, Naeem Nadaf, Connor Dufort, Sarah Murphy, Velina Kozareva<sup>2</sup>, Charles Vanderburg, Soyon Hong, Harry Bulstrode, Peter J. Hutchinson, Robin J.M. Franklin, Evan Macosko, & Beth Stevens
+[**Single Cell Sequencing Reveals Glial Specific Responses to Tissue Processing & Enzymatic Dissociation in Mice and Humans**](CITATION)  
+Samuel E. Marsh<sup>1,\* </sup>, Tushar Kamath<sup>1</sup>, Alec J. Walker, Lasse Dissing-Olesen, Timothy R. Hammond<sup>2</sup>,  Adam M.H. Young, Abdulraouf Abdulraouf, Naeem Nadaf, Connor Dufort, Sarah Murphy, Velina Kozareva<sup>2</sup>, Charles Vanderburg, Soyon Hong, Harry Bulstrode, Peter J. Hutchinson, Robin J.M. Franklin, Evan Macosko, & Beth Stevens
 
 <sup><sup>1</sup>Performed analysis</sup>   
 <sup><sup>2</sup>Assisted analysis</sup>  
