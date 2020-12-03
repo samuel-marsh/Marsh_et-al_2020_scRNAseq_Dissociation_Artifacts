@@ -132,14 +132,6 @@ pdf("05_plots/subclustering/oligo_merged_b_rd2_factors_b_1000_k25.pdf")
 plotFactors(oligo_merged_b_liger_cleaned, num.genes = 8, plot.tsne = T)
 dev.off()
 
-# Pull factor genes
-oligo_rd2_factor18_1000 <- data.frame(top_genes_by_factor(liger_object = oligo_merged_b_liger_cleaned, liger_factor = 18, num_genes = 50))
-print(oligo_rd2_factor12)
-write.csv(oligo_rd2_factor7, "~/Desktop/oligo_test.csv")
-
-colnames(oligo_rd2_factor18_1000) <- "oligo_rd2_factor18_1000"
-write_rds(oligo_rd2_factor18_1000, "subcluster_factor_gene_list/liger_oligo_rd2_gene_list_b.RDS")
-
 # Save liger objects
 write_rds(oligo_merged_b_liger_cleaned, "RDS_subset_merge_liger/oligo_merge_cleaned_b.RDS")
 oligo_merged_b_liger_cleaned <- read_rds("RDS_subset_merge_liger/oligo_merge_cleaned.RDS")

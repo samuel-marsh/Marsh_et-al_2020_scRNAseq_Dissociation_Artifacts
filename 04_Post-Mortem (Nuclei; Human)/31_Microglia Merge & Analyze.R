@@ -141,12 +141,6 @@ pdf("05_plots/subclustering/micro_merged_rd2_factors.pdf")
 plotFactors(micro_merged_liger_cleaned, num.genes = 8, plot.tsne = T)
 dev.off()
 
-# Pull Factor Genes
-micro_rd2_factor6 <- data.frame(top_genes_by_factor(liger_object = micro_merged_liger_cleaned, liger_factor = 6, num_genes = 50))
-
-colnames(micro_rd2_factor6) <- "micro_rd2_factor6"
-write_rds(micro_rd2_factor6, "subcluster_factor_gene_list/liger_micro_rd2_gene_list.RDS")
-
 # Save Liger Objects
 write_rds(micro_merged_liger_cleaned, "RDS_subset_merge_liger/micro_subset_cleaned.RDS")
 

@@ -170,12 +170,6 @@ pdf("05_plots/subclustering/opc_merged_cleaned2.pdf")
 plotFactors(opc_merged_liger_cleaned2, num.genes = 8, plot.tsne = T)
 dev.off()
 
-# separate cluster of unknown type that also shares some act markers
-opc_rd2_factor9 <- data.frame(top_genes_by_factor(liger_object = opc_merged_liger_cleaned2, liger_factor = 9, num_genes = 50))
-colnames(opc_rd2_factor9) <- "opc_rd2_factor9"
-write_rds(opc_rd2_factor9, "subcluster_factor_gene_list/liger_opc_rd2_gene_list.RDS")
-print(opc_rd2_factor9)
-
 # save liger objects
 write_rds(opc_merged_liger_cleaned2, "RDS_subset_merge_liger/opc_subset_cleaned2.RDS")
 

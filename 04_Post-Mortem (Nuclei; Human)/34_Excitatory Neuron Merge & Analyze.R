@@ -173,12 +173,6 @@ pdf("05_plots/subclustering/excit_merged_cleaned2.pdf")
 plotFactors(excit_merged_liger_cleaned2, num.genes = 8, plot.tsne = T)
 dev.off()
 
-# Extract factor gene lists
-neuron_rd3_factor11 <- data.frame(top_genes_by_factor(liger_object = excit_merged_liger_cleaned2, liger_factor = 11, num_genes = 50))
-colnames(neuron_rd3_factor11) <- "neuron_rd3_factor11"
-write_rds(neuron_rd3_factor11, "subcluster_factor_gene_list/liger_excit_rd3_gene_list_02.RDS")
-print(neuron_rd3_factor11)
-
 # save gene list
 colnames(excit_rd2_factor9) <- "excit_rd2_factor9"
 write_rds(excit_rd2_factor9, "subcluster_factor_gene_list/liger_excit_rd2_gene_list.RDS")

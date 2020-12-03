@@ -190,13 +190,6 @@ pdf("05_plots/subclustering/astro_merged_b_cleaned3_TESTING.pdf")
 Customize_plotFactors(astro_merged_b_liger_cleaned3, num.genes = 8, plot.tsne = T)
 dev.off()
 
-# pull factor 15 genes
-astro_rd4_factor15 <- data.frame(top_genes_by_factor(liger_object = astro_merged_b_liger_cleaned3, liger_factor = 15, num_genes = 50))
-print(factor1)
-
-colnames(astro_rd4_factor15) <- "astro_rd4_factor15"
-write_rds(astro_rd4_factor15, "subcluster_factor_gene_list/liger_astro_rd2_gene_list_c.RDS")
-
 # save liger object
 write_rds(astro_merged_b_liger_cleaned3, "RDS_subset_merge_liger/astro_subset_cleaned3_C.RDS")
 

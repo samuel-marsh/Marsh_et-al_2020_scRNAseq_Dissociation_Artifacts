@@ -215,14 +215,6 @@ pdf("05_plots/subclustering/inhib_merged_cleaned3.pdf")
 plotFactors(inhib_merged_liger_cleaned3, num.genes = 8, plot.tsne = T)
 dev.off()
 
-# Not act but contains HSP90AB1
-inhib_rd4_factor18 <- data.frame(top_genes_by_factor(liger_object = inhib_merged_liger_cleaned3, liger_factor = 18, num_genes = 50))
-print(inhib_rd4_factor18)
-beep(sound = 2)
-
-colnames(inhib_rd4_factor18) <- "inhib_rd4_factor18"
-write_rds(inhib_rd4_factor18, "subcluster_factor_gene_list/liger_inhib_rd4_gene_list.RDS")
-
 # save liger objects
 write_rds(inhib_merged_liger_cleaned3, "RDS_subset_merge_liger/inhib_subset_cleaned3.RDS")
 
