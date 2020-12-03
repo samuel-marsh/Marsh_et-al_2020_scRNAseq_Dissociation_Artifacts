@@ -52,8 +52,13 @@ write_rds(astro_seurat, "RDS_Seurat Objects/astro_seurat3.RDS")
 beep(sound = 2)
 
 # Load Post-Mortem & Mouse Module Score Lists -----------------------------
-all_module_score_names <- read_rds("~/Desktop/exp17_Dissociation Paper/02_Online_Liger_PM_Local/subcluster_factor_gene_list/all_module_score_names.RDS")
-all_module_score_lists <- read_rds("~/Desktop/exp17_Dissociation Paper/02_Online_Liger_PM_Local/subcluster_factor_gene_list/all_module_score_gene_lists.RDS")
+microglia_liger_factor_list <- read_rds("~/Desktop/exp17_Dissociation Paper/02_Online_Liger_PM_Local/subcluster_factor_gene_list/new_thresholded_lists/liger_micro_cutoff_gene_list.RDS")
+
+astrocyte_liger_factor_list <- read_rds("~/Desktop/exp17_Dissociation Paper/02_Online_Liger_PM_Local/subcluster_factor_gene_list/new_thresholded_lists/liger_astro_cutoff_gene_list.RDS")
+
+# Extract Lists
+liger_mg_list <- as.character(microglia_liger_factor_list[["micro_factor_cutoff"]])
+liger_astro_list <- as.character(astrocyte_liger_factor_list[["astro_factor_cutoff"]])
 
 # Load Fresh Objects ------------------------------------------------------
 mg_fresh <- read_rds("~/Desktop/exp17_Dissociation Paper/Tushar/Fresh Tissue/smarsh_mgs/MG/mg_annot.rds")
@@ -65,14 +70,6 @@ astro_seurat3 <- read_rds("RDS_Seurat Objects/astro_seurat3.RDS")
 
 mg_stats <- Cluster_Stats_All_Samples(mg_seurat3)
 astro_stats <- Cluster_Stats_All_Samples(astro_seurat3)
-
-# Extract Lists -----------------------------------------------------------
-mouse_myeloid_list <- all_module_score_lists[["mouse_myeloid_list_HUMAN"]]
-mouse_all_cns_list <- all_module_score_lists[["mouse_all_cns_list_HUMAN"]]
-mouse_comb_list <- all_module_score_lists[["mouse_combined_list_HUMAN"]]
-
-liger_mg_list <- all_module_score_lists[["micro_liger_top25"]]
-liger_astro_list <- all_module_score_lists[["astro_liger_top25"]]
 
 # Module Scores Microglia -----------------------------------------------------------
 # Create Module Score
