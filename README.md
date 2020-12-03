@@ -1,7 +1,7 @@
 # Marsh_et-al_2020_scRNAseq_Dissociation_Artifacts  
 #### Code to reproduce analysis objects for the data contained in:  
 [**Single Cell Sequencing Reveals Glial Specific Responses to Tissue Processing & Enzymatic Dissociation in Mice and Humans**](CITATION)  
-Samuel E. Marsh<sup>1,\* </sup>, Tushar Kamath<sup>1</sup>, Alec J. Walker, Lasse Dissing-Olesen, Timothy R. Hammond<sup>2</sup>,  Adam M.H. Young, Abdulraouf Abdulraouf, Naeem Nadaf, Connor Dufort, Sarah Murphy, Velina Kozareva<sup>2</sup>, Charles Vanderburg, Soyon Hong, Harry Bulstrode, Peter J. Hutchinson, Robin J.M. Franklin, Evan Macosko, & Beth Stevens
+Samuel E. Marsh<sup>1,\* </sup>, Tushar Kamath<sup>1</sup>, Alec J. Walker, Lasse Dissing-Olesen, Timothy R. Hammond<sup>2</sup>,  Adam M.H. Young, Abdulraouf Abdulraouf, Naeem Nadaf, Connor Dufort, Sarah Murphy, Velina Kozareva<sup>2</sup>, Charles Vanderburg, Soyon Hong, Harry Bulstrode, Peter J. Hutchinson, Robin J.M. Franklin, Evan Z. Macosko, & Beth Stevens
 
 <sup><sup>1</sup>Performed analysis</sup>   
 <sup><sup>2</sup>Assisted analysis</sup>  
@@ -31,7 +31,7 @@ The data in this project can be broadly divided into 2 categories (5 sub-project
 
 ***For experiments 1-4***, all the raw data (fastqs) and expression matrices are available at the NCBI Gene Expression Omnibus (GEO) under SuperSeries [GSE152184](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE152184).   
 
-***For experiment 5***, the raw data (fastqs) and expression matrices are available through the European phenome-Genome Archive (EGA) (Accession ID: [EGADXXXXXXX](EGADXXXXXXX))
+***For experiment 5***, the raw data (fastqs) and expression matrices are available through the European phenome-Genome Archive (EGA) (Accession ID: [*in-progress*](EGADXXXXXXX))
 
 **scRNAseq of cells isolated from mouse brain (all cell types and sorted myeloid cells)**
 
@@ -42,7 +42,7 @@ The data in this project can be broadly divided into 2 categories (5 sub-project
 **snRNAseq of nuclei isolated from frozen human brain tissue**
 
   4. snRNAseq of post-mortem brain tissue | 10X 3' V3.0 | 3 samples | ([GSE157760](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE157760))  
-  5. snRNAseq of surgically resected brain tissue with or without freezing time delay | 10X 3' V3.0 | <br> 4 samples (n= 2; x2 timepoints per sample) | ([EGAXXXXXXX](EGAXXXXXXX))
+  5. snRNAseq of surgically resected brain tissue with or without freezing time delay | 10X 3' V3.0 | <br> 4 samples (n= 2; x2 timepoints per sample) | ([*in-progress*](EGAXXXXXXX))
 
 ### Processed Data
 **Experiments 1-4**  
