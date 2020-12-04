@@ -27,7 +27,7 @@ Included is the code necessary to replicate the Seurat or LIGER (or both) object
 
 ## Data  
 ### Original Data
-The data in this project can be broadly divided into 2 categories (5 sub-projects).  Please see [SI Table 1](LINK) (Mouse; Experiments 1-3) and [SI Table 2](LINK) (Human; Experiments 4-5) for breakdown by sample and more information.
+The data in this project can be broadly divided into 2 categories (5 sub-projects).  Please see [SI Table 1 & 2](https://www.biorxiv.org/content/biorxiv/early/2020/12/03/2020.12.03.408542/DC3/embed/media-3.zip?download=true) (SI Table 1: Mouse Experiments 1-3) and (SI Table 2; Human Experiments 4-5 & Human Literature Reanalysis) for breakdown by sample and more information.
 
 ***For experiments 1-4***, all the raw data (fastqs) and expression matrices are available at the NCBI Gene Expression Omnibus (GEO) under SuperSeries [GSE152184](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE152184).   
 
@@ -46,7 +46,7 @@ The data in this project can be broadly divided into 2 categories (5 sub-project
 
 ### Processed Data
 **Experiments 1-4**  
-All processed data files from Cell Ranger `count` outputs are available via NCBI GEO.  Information on Cell Ranger version and Genome/Annotation for each experiment can be found in each GEO record and [SI Table 1](LINK) or [2](LINK).
+All processed data files from Cell Ranger `count` outputs are available via NCBI GEO.  Information on Cell Ranger version and Genome/Annotation for each experiment can be found in each GEO record and [SI Table 1 & 2](https://www.biorxiv.org/content/biorxiv/early/2020/12/03/2020.12.03.408542/DC3/embed/media-3.zip?download=true).
 There are 3 processed data files per library:
   1. GSM\*\_*Sample-Name*_barcodes.tsv.gz: corresponds to the cell barcodes (i.e. column names).
   2. GSM\*\_*Sample-Name*_features.tsv.gz: corresponds to the gene identifiers (i.e. row names).
@@ -75,7 +75,7 @@ Reanalyzed data from literature is summarized detailed in table below.
 
 ### Human Data Reanalysis Meta Data
 Meta data for human data was assembled from published SI Tables, public data on synapse, or restricted access data on synapse
-  - Compiled publicly available meta data variables for each human dataset can be found in [SI Table 2](LINK).
+  - Compiled publicly available meta data variables for each human dataset can be found in [SI Table 2](https://www.biorxiv.org/content/biorxiv/early/2020/12/03/2020.12.03.408542/DC3/embed/media-3.zip?download=true).
   - "DUC" in the table indicates data available from synapse following submission and approval of Data Use Certificate.
 
 ## Acknowledgements:
