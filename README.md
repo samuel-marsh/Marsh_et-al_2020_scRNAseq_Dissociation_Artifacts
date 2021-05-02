@@ -41,34 +41,16 @@ The data in this project can be broadly divided into 2 categories (7 sub-project
 | Exp. 6 | Human | snRNA-seq (10X 3' V3.0) | snRNA-seq of surgically resected brain tissue with or without freezing time delay | [*in-progress*](EGAXXXXXXX)|
 | Exp. 7 | Human | scRNA-seq (10X 5' V2?) | scRNA-seq| [*in-progress*](LINK_TBD)|
 
-
-The data in this project can be broadly divided into 2 categories (5 sub-projects).  Please see [SI Table 1 & 2](https://www.biorxiv.org/content/biorxiv/early/2020/12/03/2020.12.03.408542/DC3/embed/media-3.zip?download=true) (SI Table 1: Mouse Experiments 1-3) and (SI Table 2; Human Experiments 4-5 & Human Literature Reanalysis) for breakdown by sample and more information.
-
-***For experiments 1-4***, all the raw data (fastqs) and expression matrices are available at the NCBI Gene Expression Omnibus (GEO) under SuperSeries [GSE152184](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE152184).   
-
-***For experiment 5***, the raw data (fastqs) and expression matrices are available through the European phenome-Genome Archive (EGA) (Accession ID: [*in-progress*](EGADXXXXXXX))
-
-**scRNAseq of cells isolated from mouse brain (all cell types and sorted myeloid cells)**
-
-  1. scRNAseq of microglia with 4 different dissociation protocols | 10X 3' V2 | 12 samples (n=3 per group) | ([GSE152183](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE152183))
-  2. scRNAseq of all CNS cells with or without inhibitors | 10X 3' V2 | 4 samples (n=2 per group) | ([GSE152182](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE152182))
-  3. scRNAseq of microglia (tail vein PBS injection) | 10X 3' V2 | 4 samples | ([GSE152210](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE152210))
-
-**snRNAseq of nuclei isolated from frozen human brain tissue**
-
-  4. snRNAseq of post-mortem brain tissue | 10X 3' V3.0 | 3 samples | ([GSE157760](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE157760))  
-  5. snRNAseq of surgically resected brain tissue with or without freezing time delay | 10X 3' V3.0 | <br> 4 samples (n= 2; x2 timepoints per sample) | ([*in-progress*](EGAXXXXXXX))
-
 ### Processed Data
-**Experiments 1-4**  
-All processed data files from Cell Ranger `count` outputs are available via NCBI GEO.  Information on Cell Ranger version and Genome/Annotation for each experiment can be found in each GEO record and [SI Table 1 & 2](https://www.biorxiv.org/content/biorxiv/early/2020/12/03/2020.12.03.408542/DC3/embed/media-3.zip?download=true).
+**Experiments 1-5**  
+All processed data files from Cell Ranger `count` outputs are available via NCBI GEO.  Information on Cell Ranger version and Genome/Annotation for each experiment can be found in each GEO record and [SI Table 1 & 2](UPDATE LINK).
 There are 3 processed data files per library:
   1. GSM\*\_*Sample-Name*_barcodes.tsv.gz: corresponds to the cell barcodes (i.e. column names).
   2. GSM\*\_*Sample-Name*_features.tsv.gz: corresponds to the gene identifiers (i.e. row names).
   3. GSM\*\_*Sample-Name*_matrix.mtx.gz: expression matrix in sparse format.
 
 ### Raw fastq Files
-All raw data fastq files can be downloaded from SRA linked from NCBI GEO records or from EGA.
+All raw data fastq files can be downloaded from SRA linked from NCBI GEO records, or from EGA/dbGAP records.
 
 ### Literature Reanalysis
 Reanalyzed data from literature is summarized detailed in table below.
@@ -90,11 +72,11 @@ Reanalyzed data from literature is summarized detailed in table below.
 
 ### Human Data Reanalysis Meta Data
 Meta data for human data was assembled from published SI Tables, public data on synapse, or restricted access data on synapse
-  - Compiled publicly available meta data variables for each human dataset can be found in [SI Table 2](https://www.biorxiv.org/content/biorxiv/early/2020/12/03/2020.12.03.408542/DC3/embed/media-3.zip?download=true).
+  - Compiled publicly available meta data variables for each human dataset can be found in [SI Table 2](UPDATE LINK).
   - "DUC" in the table indicates data available from synapse following submission and approval of Data Use Certificate.
 
 ## Acknowledgements:
-This study was supported by funding from Cure Alzheimer's Fund (B.S.).  Special thanks to authors Tushar Kamath, Tim Hammond, Alec Walker, Lasse-Dissing-Olesen, Velina Kozareva, Evan Macosko, as well other members of Stevens and Macosko labs for helpful discussions and assistance during the analysis of this project.  
+This study was supported by funding from Cure Alzheimer's Fund (B.S.).  Special thanks to authors Tushar Kamath, Tim Hammond, Alec Walker, Lasse-Dissing-Olesen, Velina Kozareva, Evan Macosko, as well other members of Stevens and Macosko labs for helpful discussions and assistance during the analysis phase of this project.  
 
 **Data Acknowledgements:**  
 The analysis and results published here from Zhou et al., 2020 in whole or in part are based on data obtained from the [AMP-AD Knowledge Portal](https://adknowledgeportal.synapse.org/). Samples for this study were provided by the Rush Alzheimer’s Disease Center, Rush University Medical Center, Chicago. Data collection was supported through funding by NIA grants P30AG10161, R01AG15819, R01AG17917, R01AG30146, R01AG36836, U01AG32984, U01AG46152, the Illinois Department of Public Health, and the Translational Genomics Research Institute. Raw data used in analysis here are available from AMP-AD/Synapse database through links provided in table above.  Additional ROSMAP data can be requested at [https://www.radc.rush.edu](https://www.radc.rush.edu).
