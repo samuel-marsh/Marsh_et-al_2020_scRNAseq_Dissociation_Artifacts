@@ -34,7 +34,7 @@ Datasets contained in this paper:
 | Exp. 2 | Mouse | scRNA-seq (10X 3' V2) | scRNA-seq of all CNS cells with or without inhibitors | [GSE152182](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE152182) |
 | Exp. 3 | Mouse | scRNA-seq (10X 3' V2) | scRNA-seq of microglia (tail vein PBS injection) | [GSE152210](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE152210)|
 | Exp. 3 | Mouse | scRNA-seq (10X 3' V2) | scRNA-seq of microglia (tail vein PBS injection) | [GSE152210](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE152210)|
-| Human Experiments |  |  | | |
+| Human Experiments |
 | Exp. 3 | Mouse | scRNA-seq (10X 3' V2) | scRNA-seq of microglia (tail vein PBS injection) | [GSE152210](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE152210)|
 | Exp. 3 | Mouse | scRNA-seq (10X 3' V2) | scRNA-seq of microglia (tail vein PBS injection) | [GSE152210](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE152210)|
 
