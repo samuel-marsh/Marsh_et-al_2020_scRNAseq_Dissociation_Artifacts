@@ -27,6 +27,15 @@ Included is the code necessary to replicate the Seurat or LIGER (or both) object
 
 ## Data  
 ### Original Data
+Datasets contained in this paper:
+| Dataset | Species | Seq Used | Raw/Count Data | Publication |
+| :-----: | :-----: | :------: | :------------: | :---------: |
+| Exp. 1 | Mouse | scRNAseq (10X 3' V2) | scRNAseq of microglia with 4 different dissociation protocols | [GSE152183](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE152183) |
+| Plemel | Mouse | scRNAseq (10X 3' V2) | [GSE115803](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE115803) | [Plemel et al., 2020 <br> (Science Advances)](https://advances.sciencemag.org/content/6/3/eaay6324) |
+| Zywitza | Mouse | scRNAseq (Drop-Seq) | [GSE111527](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE111527) | [Zywitza et al., 2018 <br> (Cell Reports)](https://www.cell.com/cell-reports/fulltext/S2211-1247(18)31732-7?) |
+
+
+
 The data in this project can be broadly divided into 2 categories (5 sub-projects).  Please see [SI Table 1 & 2](https://www.biorxiv.org/content/biorxiv/early/2020/12/03/2020.12.03.408542/DC3/embed/media-3.zip?download=true) (SI Table 1: Mouse Experiments 1-3) and (SI Table 2; Human Experiments 4-5 & Human Literature Reanalysis) for breakdown by sample and more information.
 
 ***For experiments 1-4***, all the raw data (fastqs) and expression matrices are available at the NCBI Gene Expression Omnibus (GEO) under SuperSeries [GSE152184](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE152184).   
