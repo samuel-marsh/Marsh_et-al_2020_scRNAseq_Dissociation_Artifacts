@@ -33,10 +33,11 @@ Datasets contained in this paper:
 | Exp. 1 | Mouse | scRNA-seq (10X 3' V2) | scRNA-seq of microglia with 4 different dissociation protocols | [GSE152183](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE152183) |
 | Exp. 2 | Mouse | scRNA-seq (10X 3' V2) | scRNA-seq of all CNS cells with or without inhibitors | [GSE152182](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE152182) |
 | Exp. 3 | Mouse | scRNA-seq (10X 3' V2) | scRNA-seq of microglia (tail vein PBS injection) | [GSE152210](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE152210)|
-| Exp. 3 | Mouse | scRNA-seq (10X 3' V2) | scRNA-seq of microglia (tail vein PBS injection) | [GSE152210](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE152210)|
-| Human Experiments |
-| Exp. 3 | Mouse | scRNA-seq (10X 3' V2) | scRNA-seq of microglia (tail vein PBS injection) | [GSE152210](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE152210)|
-| Exp. 3 | Mouse | scRNA-seq (10X 3' V2) | scRNA-seq of microglia (tail vein PBS injection) | [GSE152210](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE152210)|
+| Exp. 4 | Mouse | scRNA-seq (10X 3' V3.0 & V3.1) | scRNA-seq of microglia w or w/o Inhibitors (10X Version Analysis) | [GSEXXXXXX](LINK_TBD)|
+| |  |  | | |
+| Exp. 5 | Human | snRNA-seq (10X 3' V3.0) | snRNA-seq of post-mortem brain tissue | [GSE157760](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE157760)|
+| Exp. 6 | Human | snRNA-seq (10X 3' V3.0) | snRNA-seq of surgically resected brain tissue with or without freezing time delay | [*in-progress*](EGAXXXXXXX)|
+| Exp. 7 | Human | scRNA-seq (10X 5' V2?) | scRNA-seq| [*in-progress*](LINK_TBD)|
 
 
 The data in this project can be broadly divided into 2 categories (5 sub-projects).  Please see [SI Table 1 & 2](https://www.biorxiv.org/content/biorxiv/early/2020/12/03/2020.12.03.408542/DC3/embed/media-3.zip?download=true) (SI Table 1: Mouse Experiments 1-3) and (SI Table 2; Human Experiments 4-5 & Human Literature Reanalysis) for breakdown by sample and more information.
