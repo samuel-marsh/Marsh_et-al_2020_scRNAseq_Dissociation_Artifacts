@@ -1,6 +1,6 @@
 # Marsh_et-al_2020_scRNAseq_Dissociation_Artifacts  
 #### Code to reproduce analysis objects for the data contained in:  
-[**Single Cell Sequencing Reveals Glial Specific Responses to Tissue Processing & Enzymatic Dissociation in Mice and Humans**](https://www.biorxiv.org/content/10.1101/2020.12.03.408542v1)  
+[**Single Cell Sequencing Reveals Glial Specific Responses to Tissue Processing & Enzymatic Dissociation in Mice and Humans**](LINK_TBD)  
 Samuel E. Marsh<sup>1,\* </sup>, Alec J. Walker, Tushar Kamath<sup>1</sup>, Lasse Dissing-Olesen, Timothy R. Hammond<sup>2</sup>, T. Yvanka de Soysa, Adam M.H. Young, Abdulraouf Abdulraouf, Naeem Nadaf, Sarah Murphy, Alicia C. Walker, Connor Dufort, Liliana E. Lucca, Velina Kozareva<sup>2</sup>, Charles Vanderburg, Soyon Hong, Harry Bulstrode, Peter J. Hutchinson, Daniel J. Gaffney, David A. Hafler, Robin J.M. Franklin, Evan Z. Macosko, & Beth Stevens
 
 <sup><sup>1</sup>Performed analysis</sup>   
@@ -22,7 +22,7 @@ Included is the code necessary to replicate the Seurat or LIGER (or both) object
 - LIGER analyses were performed using the in development ["online"](https://github.com/MacoskoLab/liger/tree/online) branch, updating throughout analysis to accommodate bug fixes.  
   - LIGER analyses also utilize multiple versions of Seurat as specified in code for some of the following situations:
     - Seurat V3 used used for data import, QC filtering (genes, UMIs, % mito), and majority of plotting.
-    - Seurat V2 was used during LIGER analysis workflow to accommodate use of now deprecated [`clusterLouvainJaccard` function](https://github.com/samuel-marsh/Marsh_et-al_2020_scRNAseq_Dissociation_Artifacts/tree/master/08_Misc) which relied on Seurat V2 object structure.
+    - Seurat V2 was used during LIGER analysis workflow to accommodate use of now deprecated [`clusterLouvainJaccard` function](https://github.com/samuel-marsh/Marsh_et-al_2020_scRNAseq_Dissociation_Artifacts/tree/master/11_Misc) which relied on Seurat V2 object structure.
     - Conversion between Seurat and LIGER objects was performed using built in LIGER functions `seuratToLiger` and `ligerToSeurat`.
 
 ## Data  
