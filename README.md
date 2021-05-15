@@ -1,7 +1,7 @@
 # Marsh_et-al_2020_scRNAseq_Dissociation_Artifacts  
 #### Code to reproduce analysis objects for the data contained in:  
 [**Single Cell Sequencing Reveals Glial Specific Responses to Tissue Processing & Enzymatic Dissociation in Mice and Humans**](https://www.biorxiv.org/content/10.1101/2020.12.03.408542v1)  
-Samuel E. Marsh<sup>1,\* </sup>, Alec J. Walker, Tushar Kamath<sup>1</sup>, Lasse Dissing-Olesen, T. Yvanka de Soysa, Timothy R. Hammond<sup>2</sup>,  Adam M.H. Young, Abdulraouf Abdulraouf, Naeem Nadaf, Sarah Murphy, Alicia Walker, Connor Dufort, Liliana E. Lucca, Velina Kozareva<sup>2</sup>, Charles Vanderburg, Soyon Hong, Harry Bulstrode, Peter J. Hutchinson, Daniel J. Gaffney, David A. Hafler, Robin J.M. Franklin, Evan Z. Macosko, & Beth Stevens
+Samuel E. Marsh<sup>1,\* </sup>, Alec J. Walker, Tushar Kamath<sup>1</sup>, Lasse Dissing-Olesen, Timothy R. Hammond<sup>2</sup>, T. Yvanka de Soysa, Adam M.H. Young, Abdulraouf Abdulraouf, Naeem Nadaf, Sarah Murphy, Alicia Walker, Connor Dufort, Liliana E. Lucca, Velina Kozareva<sup>2</sup>, Charles Vanderburg, Soyon Hong, Harry Bulstrode, Peter J. Hutchinson, Daniel J. Gaffney, David A. Hafler, Robin J.M. Franklin, Evan Z. Macosko, & Beth Stevens
 
 <sup><sup>1</sup>Performed analysis</sup>   
 <sup><sup>2</sup>Assisted analysis</sup>  
@@ -39,11 +39,11 @@ The data in this project can be broadly divided into 2 categories (7 sub-project
 | |  |  | | |
 | Exp. 5 | Human | snRNA-seq (10X 3' V3.0) | snRNA-seq of post-mortem brain tissue | [GSE157760](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE157760)|
 | Exp. 6 | Human | snRNA-seq (10X 3' V3.0) | snRNA-seq of surgically resected brain tissue with or without freezing time delay | [*in-progress*](EGAXXXXXXX)|
-| Exp. 7 | Human | scRNA-seq (10X 5' V2?) | scRNA-seq| [*in-progress*](LINK_TBD)|
+| Exp. 7 | Human | scRNA-seq (10X 5' V1) | scRNA-seq| [*in-progress*](LINK_TBD)|
 
 ### Processed Data
-**Experiments 1-5**  
-All processed data files from Cell Ranger `count` outputs are available via NCBI GEO.  Information on Cell Ranger version and Genome/Annotation for each experiment can be found in each GEO record and [SI Table 1 & 2](UPDATE LINK).
+All proceesed data files represent the output from Cell Ranger `count`.  Files provided are the "*filtered_feature_bc_matrix*" (i.e. only containing the barcodes that Cell Ranger called as cells during preprocessing). Information on Cell Ranger version and Genome/Annotation for each experiment can be found in [SI Table 1 & 2](UPDATE LINK) as well as individual repository meta data.  
+**Experiments 1-3, 5 (NCBI GEO)**  
 There are 3 processed data files per library:
   1. GSM\*\_*Sample-Name*_barcodes.tsv.gz: corresponds to the cell barcodes (i.e. column names).
   2. GSM\*\_*Sample-Name*_features.tsv.gz: corresponds to the gene identifiers (i.e. row names).
@@ -56,19 +56,24 @@ All raw data fastq files can be downloaded from SRA linked from NCBI GEO records
 Reanalyzed data from literature is summarized detailed in table below.
 | Dataset | Species | Seq Used | Raw/Count Data | Publication |
 | :-----: | :-----: | :------: | :------------: | :---------: |
-| Mathys | Mouse | scRNAseq (Smart-seq2) | [GEO103334](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE103334) <br> & Authors<sup>a</sup> | [Mathys et al., 2017 <br> (Cell Reports)](https://www.cell.com/cell-reports/fulltext/S2211-1247(17)31314-1?) |
-| Plemel | Mouse | scRNAseq (10X 3' V2) | [GSE115803](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE115803) | [Plemel et al., 2020 <br> (Science Advances)](https://advances.sciencemag.org/content/6/3/eaay6324) |
-| Zywitza | Mouse | scRNAseq (Drop-Seq) | [GSE111527](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE111527) | [Zywitza et al., 2018 <br> (Cell Reports)](https://www.cell.com/cell-reports/fulltext/S2211-1247(18)31732-7?) |
-| Mizrak | Mouse | scRNAseq (Microwell Seq) | [GSE109447](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE109447) | [Mizrak et al., 2019 <br> (Cell Reports)](https://www.cell.com/cell-reports/fulltext/S2211-1247(18)31974-0?) |
-| Zeisel | Mouse | scRNAseq (10X 3' V1 & V2) | [mousebrain.org](mousebrain.org) | [Zeisel et al., 2018 <br> (Cell)](https://www.cell.com/cell/fulltext/S0092-8674(18)30789-X?) |
-| Hammond | Mouse | scRNAseq (10X 3' V1 & V2) | [GSE121654](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE121654) | [Hammond et al., 2019 <br> (Immunity)](https://www.cell.com/immunity/fulltext/S1074-7613(18)30485-0?) |
-| Zhou | Human | snRNAseq (10X 5' V1) | [syn21670836](https://adknowledgeportal.synapse.org/Explore/Studies/DetailsPage?Study=syn21670836) | [Zhou et al., 2020 <br> (Nature Medicine)](https://www.nature.com/articles/s41591-019-0695-9?) |
-| Morabito<sup>i</sup> | Human | snRNAseq (10X 3' V3.0) | [syn18915937](https://www.synapse.org/#!Synapse:syn18915937/wiki/592740) | [Morabito et al., 2020 <br> (Human Molecular Genetics)](https://academic.oup.com/hmg/advance-article/doi/10.1093/hmg/ddaa182/5892988) |
-| Leng & Li | Human | snRNAseq (10X 3' V2) | [syn21788402](https://www.synapse.org/#!Synapse:syn21788402/wiki/601825)<sup>b</sup> <br> & [GSE147528](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE147528) | [Leng & Li et al., 2021 <br> (Nature Neuroscience)](https://www.nature.com/articles/s41593-020-00764-7) |
+| Mathys | Mouse | scRNAseq (Smart-seq2) | [GEO103334](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE103334) <br> & Authors<sup>a</sup> | [Mathys et al., 2017 <br> (Cell Reports)](https://doi.org/10.1016/j.celrep.2017.09.039) |
+| Plemel | Mouse | scRNAseq (10X 3' V2) | [GSE115803](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE115803) | [Plemel et al., 2020 <br> (Science Advances)](https://doi.org/10.1126/sciadv.aay6324) |
+| Zywitza | Mouse | scRNAseq (Drop-Seq) | [GSE111527](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE111527) | [Zywitza et al., 2018 <br> (Cell Reports)](https://doi.org/10.1016/j.celrep.2018.11.003) |
+| Mizrak | Mouse | scRNAseq (Microwell Seq) | [GSE109447](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE109447) | [Mizrak et al., 2019 <br> (Cell Reports)](https://doi.org/10.1016/j.celrep.2018.12.044) |
+| Zeisel | Mouse | scRNAseq (10X 3' V1 & V2) | [mousebrain.org](mousebrain.org) | [Zeisel et al., 2018 <br> (Cell)](https://doi.org/10.1016/j.cell.2018.06.021) |
+| Hammond | Mouse | scRNAseq (10X 3' V1 & V2) | [GSE121654](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE121654) | [Hammond et al., 2019 <br> (Immunity)](https://doi.org/10.1016/j.immuni.2018.11.004) |
+| Keren-Shaul<sup>b</sup> | Mouse | MARS-Seq | [GSE98969](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE98969) <br> | [Keren-Shaul et al., 2017 <br> (Cell)](https://doi.org/10.1016/j.cell.2017.05.018) |
+| Pasciuto | Mouse | scRNAseq (10X 3' V2) | [GSE144038](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE144038) <br> & [Mendeley Data](https://data.mendeley.com/datasets/hsmzw47kbg/3) | [Pasciuto et al., 2020 <br> (Cell)](https://doi.org/10.1016/j.cell.2020.06.026) |
+| Crinier | Mouse | scRNAseq (10X 3' V2) | [GSE119562](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE119562) | [Crinier et al., 2018 <br> (Cell)](https://doi.org/10.1016/j.immuni.2018.09.009) |
+| Pasciuto | Human | scRNAseq (10X 3' V2) | [GSE146165](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE146165) <br> & [Mendeley Data](https://data.mendeley.com/datasets/hsmzw47kbg/3) | [Pasciuto et al., 2020 <br> (Cell)](https://doi.org/10.1016/j.cell.2020.06.026) |
+| Zhou | Human | snRNAseq (10X 5' V1) | [syn21670836](https://adknowledgeportal.synapse.org/Explore/Studies/DetailsPage?Study=syn21670836) | [Zhou et al., 2020 <br> (Nature Medicine)](https://doi.org/10.1038/s41591-019-0695-9) |
+| Morabito<sup>i</sup> | Human | snRNAseq (10X 3' V3.0) | [syn18915937](https://www.synapse.org/#!Synapse:syn18915937/wiki/592740) | [Morabito et al., 2020 <br> (Human Molecular Genetics)](https://doi.org/10.1093/hmg/ddaa182) |
+| Leng & Li | Human | snRNAseq (10X 3' V2) | [syn21788402](https://www.synapse.org/#!Synapse:syn21788402/wiki/601825)<sup>c</sup> <br> & [GSE147528](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE147528) | [Leng & Li et al., 2021 <br> (Nature Neuroscience)](https://doi.org/10.1038/s41593-020-00764-7) |
 
-<sup><sup>a</sup>FPKM data and raw fastq files are available via GEO.  Raw count matrix was obtained via personal communication with authors.</sup>    
-<sup><sup>b</sup>Data on synapse are post-QC and were used for re-analysis.  GEO records contain the all barcodes (unfiltered) HDF5 cellranger output files and fastqs.</sup>  
-<sup><sup>i</sup>Reanalysis of Morabito et al., was also used for calculation of cell type proportions in [Liddelow, Marsh, & Stevens et al., 2020 (Trends in Immunology)](https://www.cell.com/trends/immunology/fulltext/S1471-4906(20)30155-1)</sup>
+<sup><sup>a</sup>FPKM data and raw fastq files are available via GEO.  Raw count matrix was obtained via personal communication with authors.</sup>  
+<sup><sup>b</sup>Only a specific subset of samples were used in reanalysis.  See reanalysis code for more information.</sup>    
+<sup><sup>c</sup>Data on synapse are post-QC and were used for re-analysis.  GEO records contain the all barcodes (unfiltered) HDF5 cellranger output files and fastqs.</sup>  
+<sup><sup>i</sup>Reanalysis of Morabito et al., was also used for calculation of cell type proportions in [Liddelow, Marsh, & Stevens et al., 2020 (Trends in Immunology)](https://doi.org/10.1016/j.it.2020.07.006)</sup>
 
 ### Human Data Reanalysis Meta Data
 Meta data for human data was assembled from published SI Tables, public data on synapse, or restricted access data on synapse
