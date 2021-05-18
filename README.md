@@ -1,7 +1,7 @@
 # Marsh_et-al_2020_scRNAseq_Dissociation_Artifacts  
 #### Code to reproduce analysis objects for the data contained in:  
 [**Single Cell Sequencing Reveals Glial Specific Responses to Tissue Processing & Enzymatic Dissociation in Mice and Humans**](LINK_TBD)  
-Samuel E. Marsh<sup>1,\* </sup>, Alec J. Walker, Tushar Kamath<sup>1</sup>, Lasse Dissing-Olesen, Timothy R. Hammond<sup>2</sup>, T. Yvanka de Soysa, Adam M.H. Young, Abdulraouf Abdulraouf, Naeem Nadaf, Sarah Murphy, Alicia C. Walker, Connor Dufort, Liliana E. Lucca, Velina Kozareva<sup>2</sup>, Charles Vanderburg, Soyon Hong, Harry Bulstrode, Peter J. Hutchinson, Daniel J. Gaffney, David A. Hafler, Robin J.M. Franklin, Evan Z. Macosko, & Beth Stevens
+Samuel E. Marsh<sup>1,\* </sup>, Alec J. Walker, Tushar Kamath<sup>1</sup>, Lasse Dissing-Olesen, Timothy R. Hammond<sup>2</sup>, T. Yvanka de Soysa, Adam M.H. Young, Sarah Murphy, Abdulraouf Abdulraouf, Naeem Nadaf, Alicia C. Walker, Connor Dufort, Liliana E. Lucca, Velina Kozareva<sup>2</sup>, Charles Vanderburg, Soyon Hong, Harry Bulstrode, Peter J. Hutchinson, Daniel J. Gaffney, David A. Hafler, Robin J.M. Franklin, Evan Z. Macosko, & Beth Stevens
 
 <sup><sup>1</sup>Performed analysis</sup>   
 <sup><sup>2</sup>Assisted analysis</sup>  
@@ -43,7 +43,7 @@ The data in this project can be broadly divided into 2 categories (7 sub-project
 
 ### Processed Data
 All proceesed data files represent the output from Cell Ranger `count`.  Files provided are the "*filtered_feature_bc_matrix*" (i.e. only containing the barcodes that Cell Ranger called as cells during preprocessing). Information on Cell Ranger version and Genome/Annotation for each experiment can be found in [SI Table 1 & 2](UPDATE LINK) as well as individual repository meta data.  
-**Experiments 1-3, 5 (NCBI GEO)**  
+**Experiments 1-4, 5 (NCBI GEO)**  
 There are 3 processed data files per library:
   1. GSM\*\_*Sample-Name*_barcodes.tsv.gz: corresponds to the cell barcodes (i.e. column names).
   2. GSM\*\_*Sample-Name*_features.tsv.gz: corresponds to the gene identifiers (i.e. row names).
