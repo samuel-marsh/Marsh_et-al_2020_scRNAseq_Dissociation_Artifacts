@@ -42,7 +42,8 @@ The data in this project can be broadly divided into 2 categories (7 sub-project
 | Exp. 7 | Human | scRNA-seq (10X 5' V1) | scRNA-seq| [*in-progress*](LINK_TBD)|
 
 ### Processed Data
-All proceesed data files represent the output from Cell Ranger `count`.  Files provided are the "*filtered_feature_bc_matrix*" (i.e. only containing the barcodes that Cell Ranger called as cells during preprocessing). Information on Cell Ranger version and Genome/Annotation for each experiment can be found in [SI Table 1 & 2](UPDATE LINK) as well as individual repository meta data.  
+All proceesed data files represent the output from Cell Ranger `count`.  Files provided are the "*filtered_feature_bc_matrix*" (i.e. only containing the barcodes that Cell Ranger called as cells during preprocessing). Information on Cell Ranger version and Genome/Annotation for each experiment can be found in [SI Table 1 & 2](UPDATE_LINK) as well as individual repository meta data.  
+
 **Experiments 1-4, 5 (NCBI GEO)**  
 There are 3 processed data files per library:
   1. GSM\*\_*Sample-Name*_barcodes.tsv.gz: corresponds to the cell barcodes (i.e. column names).
