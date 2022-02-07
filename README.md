@@ -1,6 +1,6 @@
 # Marsh_et-al_2020_scRNAseq_Dissociation_Artifacts  
 
-<details>  
+<check>  
 
 #### Code to reproduce analysis objects for the data contained in:  
 [**Single Cell Sequencing Reveals Glial Specific Responses to Tissue Processing & Enzymatic Dissociation in Mice and Humans**](LINK_TBD)  
