@@ -6,7 +6,7 @@ The preprint [**Single Cell Sequencing Reveals Glial Specific Responses to Tissu
 This code repository is still accurate to the preprint version but is being deprecated in favor of the final code repository here:
 [https://github.com/samuel-marsh/Marsh_et-al_2022_scRNAseq_Dissociation_Artifacts](https://github.com/samuel-marsh/Marsh_et-al_2022_scRNAseq_Dissociation_Artifacts).  A zip folder containing this repository can be downloaded from that final repository as well.
 
-This code repository is being reorganized to direct readers to the final one.
+This code repository is being reorganized to direct readers to the final one.  Original README can be viewed in the dropdown below.
 
 <details>
 
