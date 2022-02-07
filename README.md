@@ -3,7 +3,7 @@
 ## ALERT: Now Published:
 The preprint [**Single Cell Sequencing Reveals Glial Specific Responses to Tissue Processing & Enzymatic Dissociation in Mice and Humans**](https://www.biorxiv.org/content/10.1101/2020.12.03.408542v1) has now been revised and published in Nature Neuroscience.  
 
-This code repository is still accurate to the preprint version and is being deprecated in favor of the final code repository here:
+This code repository is still accurate to the preprint version but is being deprecated in favor of the final code repository here:
 [https://github.com/samuel-marsh/Marsh_et-al_2022_scRNAseq_Dissociation_Artifacts](https://github.com/samuel-marsh/Marsh_et-al_2022_scRNAseq_Dissociation_Artifacts).  A zip folder containing this repository can be downloaded from that final repository as well.
 
 This code repository is being reorganized to direct readers to the final one.
